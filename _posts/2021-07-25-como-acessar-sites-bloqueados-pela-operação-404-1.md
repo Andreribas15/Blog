@@ -4,10 +4,11 @@ title: Como acessar sites bloqueados pela operação 404
 meta_description: Veja como acessar sites bloqueados pela operação 404
 author: andre_ribas
 date: 2021-07-25 12:45:29
-intro_paragraph: '<img
-  src="https://lh5.googleusercontent.com/DTOkAKB8b4ELiq874YSYQa74CeDX3vWU7yAVy…NIUjXGkz_M8jkMqEbKmOnu8gLRDOk0uhc9R3PsI-u6bTT36mUCOODGcjuOh9fs_zx8PQ=w1280"
-  class="CENy8b" style="width: 100.4146490872%; margin: 0% 0 0%
-  -0.2073245436%">'
+intro_paragraph: >-
+  <img src="https://telegra.ph/file/27619a4fd57c8d3ad0606.png" class="CENy8b"
+  style="width: 100.4146490872%; margin: 0% 0 0% -0.2073245436%">
+
+  <span style="font-family: 'Arial'; font-weight: normal;">…</span>
 ---
 Bom, agora vou mostrar a vocês como acessar os sites que foram 'fechados' pelo Ministério da Justiça e Segurança Pública na operação 404
 
