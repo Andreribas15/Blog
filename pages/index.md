@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome
+title: Bem vindo(a)
 meta_description: Bem vindo(a)
 permalink: /
 section: home
