@@ -8,7 +8,7 @@ intro_paragraph: >-
   <img src="https://telegra.ph/file/27619a4fd57c8d3ad0606.png" class="CENy8b"
   style="width: 100.4146490872%; margin: 0% 0 0% -0.2073245436%">
 
-  <span style="font-family: 'Arial'; font-weight: normal;">…</span>
+  <span style="font-family: 'Arial'; font-weight: normal;">Você já deve ter ouvido falar da </span><span class=" aw5Odc" style="font-family: 'Arial'; font-weight: normal; text-decoration: underline;"><a class="XqQF9c" href="/operacao-404">Operação 404</a></span><span style="font-family: 'Arial'; font-weight: normal;">", que fechou mais de 300 sites e aplicativos de pirataria e muitos 'perderam' seus sites favoritos de séries, filmes, anime e músicas"
 ---
 Bom, agora vou mostrar a vocês como acessar os sites que foram 'fechados' pelo Ministério da Justiça e Segurança Pública na operação 404
 
