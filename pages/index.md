@@ -7,4 +7,7 @@ section: home
 intro_paragraph: "[](https://github.com/danurbanowicz/jekyll-netlify-boilerplat\
   e)Olá, bem vindo(a) ao meu site 😀"
 ---
-<audio controls="controls" autoplay="autoplay" loop="loop" src="1468285242-481817.mp3" preload="auto"></audio>
+<audio autoplay="autoplay" controls="controls">
+<source src="1468285242-481817.mp3" type="audio/mp3" />
+seu navegador não suporta HTML5
+</audio>
