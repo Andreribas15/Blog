@@ -743,7 +743,7 @@ $(document).ready( function(){
 <link rel="icon" href="https://www.apalavraoriginal.org.br/image/icon_favicon-48.png" sizes="48x48">
 <link rel="icon" href="https://www.apalavraoriginal.org.br/image/icon_favicon-64.png" sizes="64x64">
 <link rel="icon" href="https://www.apalavraoriginal.org.br/image/icon_favicon-128.png" sizes="128x128">
-<!--<link rel="apple-touch-icon" href="image/favicon.ico">-->
+<!--<link rel="apple-touch-icon" href="https://www.apalavraoriginal.org.br/image/favicon.ico">-->
 
 <style>
 #clappr {
