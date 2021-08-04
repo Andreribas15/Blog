@@ -1,66 +1,1682 @@
 
-<!DOCTYPE HTML>
-<!--[if lt IE 7]>      <html lang="pt-br" data-ng-app="bb" class="ltr no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="pt-br" data-ng-app="bb" class="ltr no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="pt-br" data-ng-app="bb" class="ltr no-js lt-ie9 "> <![endif]-->
-<!--[if IE 9]>    <html lang="pt-br" data-ng-app="bb" class="ltr no-js lt-ie9 ie9"><![endif]-->
-<!--[if gt IE 9]><!--><html lang="pt-br" data-ng-app="bb" class="ltr no-js svg-support no-touch has-svg" ><!--<![endif]-->
-<head> 
-	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	 <meta http-equiv="Content-Language" content="pt" />
-	 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	 
-	 					<link rel="stylesheet" type="text/css" href="https://www.bb.com.br/pbb/app/docs/dist/css/style.min.css?v=202107302"/>
-			 	 
-	 	 
-	 <link rel="stylesheet" type="text/css" href="https://www.bb.com.br/pbb/app/docs/s001/stylesheets/style.css?v=202107302" />
-	 <title data-ng-bind="title">Banco do Brasil</title>
-	 <script type="text/javascript">var mapeouCompartilhar = false, mapeouBannerPromocional = false;</script>
-	 <script type='text/javascript'>var portalParam = {'diretorioPai' : '500962', 'diretorioFilho': '502292', 'flagSeguimento': 'true', 'deficienteVisual':'false', 'seguimento':'1', 'seguimentoFiltro':'0000100001', 'testeira':'A', 'nicho':'null', 'nichoFiltro':'0000110', 'idioma':'1', 'meuAcesso':'1', 'flagFooter':'0', 'pagina':'p010', 'site':'s001', 'tema':'1', 'url':'\/pbb\/s001t001p010,500962,502292,1,1,1,1.bb', 'codigoMenuSelecionado':'0', 'corpo':'null', 'template':'t001', 'urlAmigavel':'/pbb/pagina-inicial', 'codigoNoticia':'0', 'codigoGrupoTag':'null', 'tagBI':'null', 'id_servidor':'cHhsMXdlYjAwMDA2X3d3dy1leHRlcm5vLTIx', 'tp_server':'P', 'versaoPortal':'202107302', 'menuBean':[{ 'codigo' :'31935', 'titulo':'Página Inicial', 'amigavel':'/pbb/pagina-inicial', 'tagsBrakPoints':['null','null','null','null'], 'tagBI':'null'}], 'propensoes':[], '_c':'MDAwMDAwMDAw', 'timesTampServidor':'20210804144742', 'tempoCache':'3600', 'customizacao':'{"s001.header.meuAcesso": false,"s001.header.buscar": false,"s001.destaqueBuscaHome.inputBuscar": true,"s001.erro.inputBuscar": true}', 'hostHorus' : 'https://www100.bb.com.br'}; portalParam.gtm = {};</script>
-	 	 <link rel="apple-touch-icon" sizes="57x57" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/apple-icon-57x57.png">
-	 <link rel="apple-touch-icon" sizes="60x60" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/apple-icon-60x60.png">
-	 <link rel="apple-touch-icon" sizes="72x72" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/apple-icon-72x72.png">
-	 <link rel="apple-touch-icon" sizes="76x76" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/apple-icon-76x76.png">
-	 <link rel="apple-touch-icon" sizes="114x114" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/apple-icon-114x114.png">
-	 <link rel="apple-touch-icon" sizes="120x120" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/apple-icon-120x120.png">
-	 <link rel="apple-touch-icon" sizes="144x144" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/apple-icon-144x144.png">
-	 <link rel="apple-touch-icon" sizes="152x152" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/apple-icon-152x152.png">
-	 <link rel="apple-touch-icon" sizes="180x180" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/apple-icon-180x180.png">
-	 <link rel="icon" type="image/png" sizes="192x192"  href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/android-icon-192x192.png">
-	 <link rel="icon" type="image/png" sizes="32x32" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/favicon-32x32.png">
-	 <link rel="icon" type="image/png" sizes="96x96" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/favicon-96x96.png">
-	 <link rel="icon" type="image/png" sizes="16x16" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/favicon-16x16.png">
-	 <link rel="manifest" href="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/manifest.json">
-	 
-	 <meta name="msapplication-TileColor" content="#ffffff">
-	 <meta name="msapplication-TileImage" content="https://www.bb.com.br/pbb/app/docs/comum/images/structure/header/icon/ms-icon-144x144.png">
-	 <meta name="theme-color" content="#ffffff">
-	  
-	
-	<script defer type="text/javascript" src="https://www100.bb.com.br/assets/js/mqtt.min.js"></script>
-	<script defer type="text/javascript" src="https://www100.bb.com.br/assets/js/avsc.min.js"></script>
-	<link type="text/css" rel="stylesheet" href="https://www100.bb.com.br/assets/css/client.css">
-</head>
-<body class="t001 seg-1 "  ng-class="{'semAbraConta':escondeBotaoAbraSuaConta}">
- <span id="view" ng-view data-ng-class="classIsCallToAction" class="stopBody"></span>
- <div class="menuMobileCnt"><div id="menuMobileDefault"></div></div>
- <bb-av-cookies data="avCookies" ng-if="isAvCookies"></bb-av-cookies>
- <bb-intervencao data="intervencaoData" ng-if="isIntervencao"></bb-intervencao>
- <div class="isSmartphone ctn-botao-abra-sua-conta  {{headerLabels.classAtive}}" ng-if="!escondeBotaoMeuAcesso && !escondeBotaoAbraSuaConta && headerLabels.labelAbraContaSmartPhone && !escondeMenuHeader" ng-cloak>
- 	<a ng-href="{{headerLabels.linkAbraContaSmartPhone}}" class="btn abra-sua-conta-amarelo">{{headerLabels.labelAbraContaSmartPhone}}</a>
- </div>
 
-  		  	<script defer data-main="https://www.bb.com.br/pbb/app/docs/dist/js/main.js?v=202107302" src="https://www.bb.com.br/pbb/app/docs/dist/js/componentes/requirejs/require.js?v=202107302"></script>
-	  
- <!-- gtm -->
- <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TZPRH8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
- <!-- Piwik -->
- <script defer type="text/javascript">
- 	var _tokenHorus = [];
- 	var _paq = _paq || [];
- 	var keyStr="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var decode64=function(d){var b="";var l,j,g="";var k,h,f,e="";var c=0;var a=/[^A-Za-z0-9\+\/\=]/g;if(a.exec(d)){alert("There were invalid base64 characters in the input text.\nValid base64 characters are A-Z, a-z, 0-9, '+', '/',and '='\nExpect errors in decoding.")}d=d.replace(/[^A-Za-z0-9\+\/\=]/g,"");do{k=keyStr.indexOf(d.charAt(c++));h=keyStr.indexOf(d.charAt(c++));f=keyStr.indexOf(d.charAt(c++));e=keyStr.indexOf(d.charAt(c++));l=(k<<2)|(h>>4);j=((h&15)<<4)|(f>>2);g=((f&3)<<6)|e;b=b+String.fromCharCode(l);if(f!=64){b=b+String.fromCharCode(j)}if(e!=64){b=b+String.fromCharCode(g)}l=j=g="";k=h=f=e=""}while(c<d.length);return unescape(b)};
-   	</script>
-   		  	<script async defer src="https://www.bb.com.br/pbb/app/docs/dist/js/statistics.js?v=202107302"></script>
-		</body>
-</html>
+<!DOCTYPE HTML >
+<html lang="pt-br" dir="ltr">
+    <head><meta http-equiv="X-UA-Compatible" content="IE=10" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="utf-8" /><meta name="keywords" content="Caixa - O banco de todos os brasileiros" /><meta name="description" content="Caixa - O banco de todos os brasileiros" /><meta name="GENERATOR" content="Microsoft SharePoint" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Expires" content="0" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta name="ROBOTS" content="FOLLOW,INDEX" /><meta name="copyright" content="© 2014 CAIXA Econômica Federal" /><meta http-equiv="imagetoolbar" content="no" /><meta name="rating" content="general" /><meta name="facebook-domain-verification" content="1fanh6nieuwvdrulz2o9y9glxebj7e" /><link rel="shortcut icon" type="image/x-icon" href="/Style%20Library/images/favicon.ico" />
+        
+        
+        <!-- SCRIPTS  -->
+        
+        
+        <!-- Google Tag Manager -->
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-NDBHSL');
+			</script>
+		<!-- End Google Tag Manager -->
+	        
+        <script src="/Style Library/js/jquery-3.3.1.min.js">//<![CDATA[        
+        //]]></script>
+        <script src="/Style Library/js/jquery-migrate-3.0.0.min.js">//<![CDATA[
+        //]]></script>
+        
+        <script src="/Style%20Library/js/jquery-ui.min.js">//<![CDATA[
+        
+        
+        
+        //]]></script>
+        <script src="/Style%20Library/js/cross-selling.js">//<![CDATA[
+        
+        
+        
+        //]]></script>
+        <script src="/Style%20Library/js/owl.carousel.min.js">//<![CDATA[
+        
+        
+        
+        //]]></script>
+        <script src="/Style%20Library/js/home.js">//<![CDATA[
+        
+        
+        
+        //]]></script>
+        <script src="/Style%20Library/js/busca.js">//<![CDATA[
+        
+        
+        
+        //]]></script>
+        <!--<script src="/Style%20Library/js/rybenaDOM.js">//<![CDATA[
+        
+        
+        
+        //]]></script>-->
+        
+        
+         <script type="text/javascript" src="/Style%20Library/js/rybenaDOMFull-1.5.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+
+         <script type="text/javascript" src="/Style%20Library/js/rybena-1.0.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+
+        
+             <script>//<![CDATA[
+			ryb_ready(function() {
+			              ryb_initRybena({
+			            'dimension': '3D',
+			            /*Options: '2D' , '3D' (Default)*/ 'enableMobile': 'true',
+			            /*Options: 'false' , 'true'(Default)*/ 'positionPlayer': 'left' /*Options: 'right' , 'left'*/
+			        });
+			    });
+			
+        
+        		function rybena(str){
+        			console.log(str);
+        		}
+        		
+        		function includeRybenaNoBar(){}
+        		
+        		serverUrl3D = serverLibrasDomain + "/siwic-web-libras/CodeApplication3D";
+				serverUrl = serverLibrasDomain + "/siwic-web-libras/CodeApplication";
+
+        
+        
+        
+	
+        
+        //]]></script>
+
+        
+        
+        <!-- SCRIPTS  -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+	      <script src="js/html5shiv.js">//<![CDATA[//]]></script>
+	      <script src="js/respond.min.js">//<![CDATA[//]]></script>
+	    <![endif]-->
+        
+        <script type="text/javascript" src="/Style%20Library/js/politica-privacidade/politicaPrivacidade.js"></script>
+        
+        
+        <title>
+	CAIXA
+</title><link rel="stylesheet" type="text/css" href="/Style%20Library/css/caixa.css"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/css/home.css"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/css/icons.css"/>
+<script type="text/javascript" src="/_layouts/15/init.js?rev=ZwTQYqYlNTyyuMWaLlhwSg%3D%3D"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=rdA0FvWKhqfOVOlbPNjZ-oCdkqcwpWf6nwWsooFhtOVTu5ND3GW3XEIaBmWQftPFgx9HoxlJoM2b3tCvDh774KXQGcFKedDLilbdQOQ5DMXdNeJDZgRNWmqdV-w3Jb2lQhVocUKmniN30eI54AM0afCdKpn3BYc7WzQxOR22e272k5A3TwfJ6QRPA20DgUxt0&amp;t=72e85ccd"></script>
+<script type="text/javascript" src="/_layouts/15/blank.js?rev=ZaOXZEobVwykPO9g8hq%2F8A%3D%3D"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=eugI5q55v4eLp0KfXegIlqaQFXIAHUIIVtzljo8QQ0D5Pkbh7LRgoIm6Q87Sb5FxhkvBEg6IDoB_sgd277hHbqnWTxg1ORQeTsEHw8n6nNvsqxFwmEvBK_vX_00PLbfcZXTBnid8W4ZKKHNYc2yHgyVjWl63wNOthB_fQ07Doeod4vHh1TQILL5xiVaZfZJF0&amp;t=72e85ccd"></script>
+<script type="text/javascript">RegisterSod("initstrings.js", "\u002f_layouts\u002f15\u002f1046\u002finitstrings.js?rev=Dn9AtLfRc5EiCXGBvTHJWw\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("strings.js", "\u002f_layouts\u002f15\u002f1046\u002fstrings.js?rev=NSgMmxDq1n4oQzmwfMI1dg\u00253D\u00253D");RegisterSodDep("strings.js", "initstrings.js");</script>
+<script type="text/javascript">RegisterSod("sp.init.js", "\u002f_layouts\u002f15\u002fsp.init.js?rev=jvJC3Kl5gbORaLtf7kxULQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002f15\u002fScriptResx.ashx?culture=pt\u00252Dbr\u0026name=SP\u00252ERes\u0026rev=BepSmKYu4HnHfpuQpacUOQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002f15\u002fsp.ui.dialog.js?rev=3Oh2QbaaiXSb7ldu2zd6QQ\u00253D\u00253D");RegisterSodDep("sp.ui.dialog.js", "sp.init.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f15\u002fcore.js?rev=GpU7vxyOqzS0F9OfEX3CCw\u00253D\u00253D");RegisterSodDep("core.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("menu.js", "\u002f_layouts\u002f15\u002fmenu.js?rev=cXv35JACAh0ZCqUwKU592w\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("mQuery.js", "\u002f_layouts\u002f15\u002fmquery.js?rev=VYAJYBo5H8I3gVSL3MzD6A\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("callout.js", "\u002f_layouts\u002f15\u002fcallout.js?rev=ryx2n4ePkYj1\u00252FALmcsXZfA\u00253D\u00253D");RegisterSodDep("callout.js", "strings.js");RegisterSodDep("callout.js", "mQuery.js");RegisterSodDep("callout.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("clienttemplates.js", "\u002f_layouts\u002f15\u002fclienttemplates.js?rev=OJfMNjaofDqyBzPvjPo3XA\u00253D\u00253D");RegisterSodDep("clienttemplates.js", "initstrings.js");</script>
+<script type="text/javascript">RegisterSod("sharing.js", "\u002f_layouts\u002f15\u002fsharing.js?rev=XxxHIxIIc8BsW9ikVc6dgA\u00253D\u00253D");RegisterSodDep("sharing.js", "strings.js");RegisterSodDep("sharing.js", "mQuery.js");RegisterSodDep("sharing.js", "clienttemplates.js");RegisterSodDep("sharing.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("suitelinks.js", "\u002f_layouts\u002f15\u002fsuitelinks.js?rev=REwVU5jSsadDdOZlCx4wpA\u00253D\u00253D");RegisterSodDep("suitelinks.js", "strings.js");RegisterSodDep("suitelinks.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f15\u002fie55up.js?rev=0R4dbpInVlmjoVSw2Gglmw\u00253D\u00253D");RegisterSodDep("browserScript", "strings.js");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002f15\u002fsp.runtime.js?rev=5f2WkYJoaxlIRdwUeg4WEg\u00253D\u00253D");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002f15\u002fsp.js?rev=BJ9b7Ak8FOS3NwGiaTXOjA\u00253D\u00253D");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002f15\u002finplview.js?rev=iMf5THfqukSYut7sl9HwUg\u00253D\u00253D");RegisterSodDep("inplview", "strings.js");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "sp.js");</script>
+<link type="text/xml" rel="alternate" href="/_vti_bin/spsdisco.aspx" />
+            
+            
+            <link rel="canonical" href="https://www.caixa.gov.br:443/paginas/home-caixa.aspx" /><meta name="description" content="Conheça os produtos e serviços do banco que promove o desenvolvimento do país." /><meta name="keywords" content="Caixa, Destaques da Caixa, Produtos da Caixa, Sobre a Caixa, caixa, fgts, pis, fies, conectividade social, &quot;inicial&quot;" />
+            
+            
+        <span><link rel="stylesheet" href="/Style%20Library/css/clean.css" media="all" /></span></head>
+                    <body class="home" onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();"><form method="post" action="./home-caixa.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="_wpcmWpid" id="_wpcmWpid" value="" />
+<input type="hidden" name="wpcmVal" id="wpcmVal" value="" />
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="0x2A209B73C22E0E1F1FF6ED3067351FFE55813BFFEA799E671CC3701CEF7C9125E0B05B0D8AE04D93350EA3DB0EFC17251C9BCFDA053732582408A7D38A2901D2,04 Aug 2021 17:38:30 -0000" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMA9kFgJmD2QWAgIBD2QWBAIBD2QWBAIRD2QWAmYPZBYCAgEPFgIeE1ByZXZpb3VzQ29udHJvbE1vZGULKYgBTWljcm9zb2Z0LlNoYXJlUG9pbnQuV2ViQ29udHJvbHMuU1BDb250cm9sTW9kZSwgTWljcm9zb2Z0LlNoYXJlUG9pbnQsIFZlcnNpb249MTUuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NzFlOWJjZTExMWU5NDI5YwFkAh0PZBYCAgMPZBYCZg9kFgJmDzwrAAYAZAIFD2QWBgIED2QWAgIBD2QWAgICD2QWAgIFD2QWAgIDDxYCHgdWaXNpYmxlaBYCZg9kFgQCAg9kFgQCAQ8WAh8BaGQCAw8WAh8BaGQCAw8PFgIeCUFjY2Vzc0tleQUBL2RkAgYPZBYCAgEPZBYEBSZnXzE2Mjk4MzIyXzU3MzlfNGQwOF9iY2M3X2I0ZTlkZWE0YzkzYQ9kFggCAQ8PFgQeBFRleHQFG09jb3JyZXUgdW0gZXJybyBpbmVzcGVyYWRvLh8BZ2RkAgMPFgIeC18hSXRlbUNvdW50AgUWCmYPZBYCZg8VCQJVbQJVbQlERVNUQVFVRVMBMQJVbQlERVNUQVFVRVM6aHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL1B1Ymxpc2hpbmdJbWFnZXMvMDFfRGVzdGFxdWVzLnBuZwlERVNUQVFVRVMJREVTVEFRVUVTZAIBD2QWAmYPFQkERG9pcwREb2lzElBBUkEgVFJBQkFMSEFET1JFUwEyBERvaXMSUEFSQSBUUkFCQUxIQURPUkVTPmh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9QdWJsaXNoaW5nSW1hZ2VzLzAyX1RyYWJhbGhhZG9yZXMucG5nElBBUkEgVFJBQkFMSEFET1JFUxJQQVJBIFRSQUJBTEhBRE9SRVNkAgIPZBYCZg8VCQRUcmVzBFRyZXMRUFJPR1JBTUFTIFNPQ0lBSVMBMwRUcmVzEVBST0dSQU1BUyBTT0NJQUlTQWh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9QdWJsaXNoaW5nSW1hZ2VzLzAzX1Byb2dyYW1hc1NvY2lhaXMucG5nEVBST0dSQU1BUyBTT0NJQUlTEVBST0dSQU1BUyBTT0NJQUlTZAIDD2QWAmYPFQkGUXVhdHJvBlF1YXRybw5MT1RFUklBUyBDQUlYQQE0BlF1YXRybw5MT1RFUklBUyBDQUlYQTlodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvUHVibGlzaGluZ0ltYWdlcy8wNF9Mb3Rlcmlhcy5wbmcOTE9URVJJQVMgQ0FJWEEOTE9URVJJQVMgQ0FJWEFkAgQPZBYCZg8VCQVDaW5jbwVDaW5jbwtIQUJJVEHDh8ODTwE1BUNpbmNvC0hBQklUQcOHw4NPOmh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9QdWJsaXNoaW5nSW1hZ2VzLzA1X0hhYml0YWNhby5wbmcLSEFCSVRBw4fDg08LSEFCSVRBw4fDg09kAgUPFgIfBAIFFgpmD2QWCmYPFQ4CVW0CVW0CVW0JREVTVEFRVUVTATECVW06aHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL1B1Ymxpc2hpbmdJbWFnZXMvMDFfRGVzdGFxdWVzLnBuZwlERVNUQVFVRVMJREVTVEFRVUVTAAJVbQlERVNUQVFVRVMCVW0BMWQCAQ8WAh8EAgEWAmYPZBYCZg8VCgIwNSovUHVibGlzaGluZ0ltYWdlcy9ob21lL0FFLVBhcmNlbGEtNC1iZy5qcGcqL1B1Ymxpc2hpbmdJbWFnZXMvaG9tZS9BRS1QYXJjZWxhLTQtYmcuanBnQkEgNMKqIFBhcmNlbGEgZG8gQXV4w61saW8gPGJyPiBFbWVyZ2VuY2lhbCAyMDIxIDxicj5mb2kgYW50ZWNpcGFkYUtodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvUHVibGlzaGluZ0ltYWdlcy9ob21lL0FFLVBhcmNlbGEtNC1lbGVtZW50by12Mi5wbmdCQSA0wqogUGFyY2VsYSBkbyBBdXjDrWxpbyA8YnI+IEVtZXJnZW5jaWFsIDIwMjEgPGJyPmZvaSBhbnRlY2lwYWRhcVZlamEgbyBjYWxlbmTDoXJpbyBlIHNhaWJhIHF1YW5kbyB2b2PDqiB2YWkgcmVjZWJlci4gVXNlIG8gQ0FJWEEgVGVtIGUgYXByb3ZlaXRlIHVtIGJhbmNvIGludGVpcm8gbm8gc2V1IGNlbHVsYXIuJWh0dHBzOi8vYXV4aWxpby5jYWl4YS5nb3YuYnIvIy9pbmljaW8Gb3JhbmdlClNhaWJhIG1haXNkAgQPFQMAAA9NYWlzIGRlc3RhcXVlcyBkAgUPFgIfBAIEFghmD2QWAmYPFQNAaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2NhaXhhY29tc3VhZW1wcmVzYS9QYWdpbmFzL2RlZmF1bHQuYXNweBBDQUlYQSArIEVtcHJlc2Fzf1NvbHXDp8O1ZXMgZGUgY3LDqWRpdG8gcGFyYSBzdWEgZW1wcmVzYSBjb20gYXMgbWVub3JlcyB0YXhhcywgY2Fyw6puY2lhIHBhcmEgY29tZcOnYXIgYSBwYWdhciBlIHBhcmNlbGFtZW50byBlbSBhdMOpIDYwIG1lc2VzLiBkAgEPZBYCZg8VA01odHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc29icmUtYS1jYWl4YS90cmFiYWxoZS1uYS1jYWl4YS9QYWdpbmFzL2RlZmF1bHQuYXNweBFUcmFiYWxoZSBuYSBDQUlYQTZWb2PDqiB0ZW0gaW50ZXJlc3NlIGVtIHRyYWJhbGhhciBuYSBDQUlYQT8gU2FpYmEgY29tby5kAgIPZBYCZg8VAz1odHRwczovL3d3dy5jYWl4YS5nb3YuYnIvdm9jZS9uZWdvY2lhY2FvL1BhZ2luYXMvZGVmYXVsdC5hc3B4FU5lZ29jaWUgc3VhcyBkw612aWRhc9ABU2Ugdm9jw6ogZXN0w6EgY29tIGRpZmljdWxkYWRlIGRlIHBhZ2FtZW50byBkZSBzZXUgZW1wcsOpc3RpbW8sIGNhcnTDo28gZGUgY3LDqWRpdG8gb3UgZmluYW5jaWFtZW50byBoYWJpdGFjaW9uYWwsIHJlZ3VsYXJpemUgc3VhcyBkw612aWRhcyBhZ29yYSBtZXNtby4gQSBDQUlYQSBzZW1wcmUgdGVtIHVtYSBzb2x1w6fDo28gcXVlIGNhYmUgbm8gc2V1IGJvbHNvLmQCAw9kFgJmDxUDJGh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9mYWxlY29ub3NjbwxGYWxlIENvbm9zY2/iBzxzcGFuIGNsYXNzPSJob21lLXJlbGF0ZWQtZGVzYyBtaWxsaSI+PC9zcGFuPgo8YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4I3RlbGVmb25lcy1jYWl4YSI+QXRlbmRpbWVudG8gQ0FJWEEgLSAwODAwIDEwNCAwMTA0PC9hPiAKPGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4I3RlbGVmb25lcy1jYWl4YSI+Q0FJWEEgQ2lkYWTDo28gLSAwODAwIDcyNiAwMjA3PC9hPgo8YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cHM6Ly9jZWZ3ZWJjaGF0LmNoYXRic3NlcnZpY2VzLmNvbS5ici9pbmRleC5odG1sIj5OZWdvY2lhw6fDo28gZGUgRMOtdmlkYXMgdmlhIGNoYXQ8L2E+CjxhIGhyZWY9Ii9mYWxlY29ub3Njbz91dG1fc291cmNlPXNpdGVfY2FpeGEmdXRtX21lZGl1bT1tYWlzZGVzdGFxdWVzJnV0bV9jYW1wYWlnbj1vdXZpZG9yaWEmdXRtX2NvbnRlbnQ9c2FjY2FpeGEiPlNBQyBDQUlYQSAtIDA4MDAgNzI2IDAxMDE8L2E+CjxhIGhyZWY9Ii9mYWxlY29ub3Njbz91dG1fc291cmNlPXNpdGVfY2FpeGEmdXRtX21lZGl1bT1tYWlzZGVzdGFxdWVzJnV0bV9jYW1wYWlnbj1vdXZpZG9yaWEmdXRtX2NvbnRlbnQ9b3V2aWRvcmlhY2FpeGEiPk91dmlkb3JpYSBDQUlYQSAtIDA4MDAgNzI1IDc0NzQ8L2E+CjxhIGhyZWY9Imh0dHA6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL2NhbmFsLWRlbnVuY2lhL1BhZ2luYXMvZGVmYXVsdC5hc3B4P3V0bV9zb3VyY2U9c2l0ZV9jYWl4YSZ1dG1fbWVkaXVtPW1haXNkZXN0YXF1ZXMmdXRtX2NhbXBhaWduPW91dmlkb3JpYSZ1dG1fY29udGVudD1kZW51bmNpYSI+Q2FuYWwgZGUgRGVuw7puY2lhPC9hPiAKPGEgdGFyZ2V0PSJfYmxhbmsiIGhyZWY9Imh0dHBzOi8vd3d3LmNvbnN1bWlkb3IuZ292LmJyIj5Db25zdW1pZG9yLmdvdi5icjwvYT5kAgYPFQIdaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UOTWFpcyBkZXN0YXF1ZXNkAgEPZBYKZg8VDgREb2lzBERvaXMERG9pcxJQQVJBIFRSQUJBTEhBRE9SRVMBMgREb2lzPmh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9QdWJsaXNoaW5nSW1hZ2VzLzAyX1RyYWJhbGhhZG9yZXMucG5nElBBUkEgVFJBQkFMSEFET1JFUxJQQVJBIFRSQUJBTEhBRE9SRVMABERvaXMSUEFSQSBUUkFCQUxIQURPUkVTBERvaXMBMmQCAQ8WAh8EAgEWAmYPZBYCZg8VCgIwNQAAAAAAAAAAAGQCBA8VAwAAI01haXMgYmVuZWbDrWNpb3MgcGFyYSBvIHRyYWJhbGhhZG9yZAIFDxYCHwQCBBYIZg9kFgJmDxUDpwFodHRwczovL2FjZXNzb3NlZ3Vyby5jYWl4YS5nb3YuYnIvaW50ZXJuZXQuZG8/c2VnbWVudG89Q09OVkVOSUFETzAxJnRlbXBsYXRlPXNpbXVsYWRvciZ1cmxDYWxsYmFjaz1odHRwczovL3d3dy5jb25lY3RpdmlkYWRlc29jaWFsLmNhaXhhLmdvdi5ici9zaWZ1Zy13ZWIvcHJpbmNpcGFsLmZ1ZxlGR1RTIC0gU2FxdWUgQW5pdmVyc8OhcmlvLFNpbXVsZSBhcXVpIG8gdmFsb3IgcXVlIHZvY8OqIHBvZGVyw6Egc2FjYXIuZAIBD2QWAmYPFQM0aHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2JlbmVmaWNpb3MtdHJhYmFsaGFkb3IvaW5zcwRJTlNTNlJlY2ViYSBzZXUgYmVuZWbDrWNpbyBwZWxhIENBSVhBLiDDiSByw6FwaWRvIGUgc2VndXJvLmQCAg9kFgJmDxUDU2h0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9iZW5lZmljaW9zLXRyYWJhbGhhZG9yL2Fib25vLXNhbGFyaWFsL1BhZ2luYXMvZGVmYXVsdC5hc3B4DkFib25vIFNhbGFyaWFsJ1ZlcmlmaXF1ZSBxdWVtIHRlbSBkaXJldG8gZSBjb21vIHNhY2FyLmQCAw9kFgJmDxUDP2h0dHBzOi8vY2Vmd2ViY2hhdDIuY2hhdGJzc2VydmljZXMuY29tLmJyL2luZGV4Lmh0bWw/ZnVsbHNjcmVlbglDaGF0IEZHVFM6VGlyZSB0b2RhcyBhcyBzdWFzIGTDunZpZGFzIHNvYnJlIG9zIG5vdm9zIHNhcXVlcyBkbyBGR1RTLmQCBg8VAi9odHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYmVuZWZpY2lvcy10cmFiYWxoYWRvchRUb2RvcyBvcyBiZW5lZsOtY2lvc2QCAg9kFgpmDxUOBFRyZXMEVHJlcwRUcmVzEVBST0dSQU1BUyBTT0NJQUlTATMEVHJlc0FodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvUHVibGlzaGluZ0ltYWdlcy8wM19Qcm9ncmFtYXNTb2NpYWlzLnBuZxFQUk9HUkFNQVMgU09DSUFJUxFQUk9HUkFNQVMgU09DSUFJUwAEVHJlcxFQUk9HUkFNQVMgU09DSUFJUwRUcmVzATNkAgEPFgIfBAICFgRmD2QWAmYPFQoCMDMAAAAAAAAAAABkAgEPZBYCZg8VCgIwMwAAAAAAAAAAAGQCBA8VAwEzATMaVG9kb3Mgb3MgcHJvZ3JhbWFzIHNvY2lhaXNkAgUPFgIfBAIDFgZmD2QWAmYPFQMxaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F1eGlsaW8vYXV4aWxpby1leHRlbnNhbx5BdXjDrWxpbyBFbWVyZ2VuY2lhbCBFeHRlbnPDo2+GAVVtIHN1cG9ydGUgZmluYW5jZWlybyBhZGljaW9uYWwgYW9zIHRyYWJhbGhhZG9yZXMgYmVuZWZpY2nDoXJpb3MgZG8gQXV4w61saW8gRW1lcmdlbmNpYWwgcXVlIGF0ZW5kYW0gw6BzIG5vdmFzIGNvbmRpw6fDtWVzLiBTYWliYSBtYWlzZAIBD2QWAmYPFQNaaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2JlbmVmaWNpb3MtdHJhYmFsaGFkb3IvYmVuZWZpY2lvLWVtZXJnZW5jaWFsL1BhZ2luYXMvZGVmYXVsdC5hc3B4Q0JlbmVmw61jaW8gRW1lcmdlbmNpYWwgZGUgUHJlc2VydmHDp8OjbyBkbyBFbXByZWdvIGUgZGEgUmVuZGEgLSBCRW3CAU8gQmVuZWbDrWNpbyBFbWVyZ2VuY2lhbCBkZSBQcmVzZXJ2YcOnw6NvIGRvIEVtcHJlZ28gZSBkYSBSZW5kYSDigJMgQkVtIMOpIGRlc3RpbmFkbyBhIHRyYWJhbGhhZG9yZXMgcXVlIGZvcm1hbGl6YXJhbSBhY29yZG8gY29tIG9zIHNldXMgZW1wcmVnYWRvcmVzLCBkdXJhbnRlIG8gcGVyw61vZG8gZGEgcGFuZGVtaWEgZGEgQ09WSUQtMTkuZAICD2QWAmYPFQMvaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3Byb2dyYW1hcy1zb2NpYWlzL2ZpZXMERklFUzJPIGNhbWluaG8gbWFpcyByw6FwaWRvIHBhcmEgY2hlZ2FyIG5hIHVuaXZlcnNpZGFkZWQCBg8VAipodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcHJvZ3JhbWFzLXNvY2lhaXMSVG9kb3Mgb3MgcHJvZ3JhbWFzZAIDD2QWCmYPFQ4GUXVhdHJvBlF1YXRybwZRdWF0cm8OTE9URVJJQVMgQ0FJWEEBNAZRdWF0cm85aHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL1B1Ymxpc2hpbmdJbWFnZXMvMDRfTG90ZXJpYXMucG5nDkxPVEVSSUFTIENBSVhBDkxPVEVSSUFTIENBSVhBA3NpbQZRdWF0cm8OTE9URVJJQVMgQ0FJWEEGUXVhdHJvATRkAgEPFgIfBAL/////D2QCBA8VAwAAAGQCBQ8WAh8EZmQCBg8VAgAAZAIED2QWCmYPFQ4FQ2luY28FQ2luY28FQ2luY28LSEFCSVRBw4fDg08BNQVDaW5jbzpodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvUHVibGlzaGluZ0ltYWdlcy8wNV9IYWJpdGFjYW8ucG5nC0hBQklUQcOHw4NPC0hBQklUQcOHw4NPAAVDaW5jbwtIQUJJVEHDh8ODTwVDaW5jbwE1ZAIBDxYCHwQCAhYEZg9kFgJmDxUKAjA1AAAAAAAAAAAAZAIBD2QWAmYPFQoCMDUAAAAAAAAAAABkAgQPFQMBNQE1GENvbmhlw6dhIG5vc3NhcyBvcMOnw7Vlc2QCBQ8WAh8EAgYWDGYPZBYCZg8VA19odHRwczovL3d3dy5jYWl4YS5nb3YuYnIvdm9jZS9oYWJpdGFjYW8vUGFnaW5hcy9kZWZhdWx0LmFzcHgjP3BrX2NhbXBhaWduPWhhYml0YWNhbyZwa19rd2Q9aG9tZQ1GaW5hbmNpYW1lbnRvAGQCAQ9kFgJmDxUDPWh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL2NvbnNvcmNpb3MvUGFnaW5hcy9kZWZhdWx0LmFzcHgKQ29uc8OzcmNpbwBkAgIPZBYCZg8VA2podHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcG9kZXItcHVibGljby9pbmZyYWVzdHJ1dHVyYS1zYW5lYW1lbnRvLW1vYmlsaWRhZGUvaGFiaXRhY2FvL1BhZ2luYXMvZGVmYXVsdC5hc3B4E0hhYml0YcOnw6NvIFBvcHVsYXIAZAIDD2QWAmYPFQNKaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvaGFiaXRhY2FvL2ltb3ZlaXMtdmVuZGEvUGFnaW5hcy9kZWZhdWx0LmFzcHgOSW3Ds3ZlaXMgQ0FJWEEAZAIED2QWAmYPFQM9aHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvbmVnb2NpYWNhby9QYWdpbmFzL2RlZmF1bHQuYXNweBhOZWdvY2lhw6fDo28gZGUgRMOtdmlkYXMAZAIFD2QWAmYPFQNFaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvaGFiaXRhY2FvL3NlcnZpY29zL1BhZ2luYXMvZGVmYXVsdC5hc3B4GlNlcnZpw6dvcyBwYXJhIEhhYml0YcOnw6NvAGQCBg8VAidodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvdm9jZS9oYWJpdGFjYW8WVHVkbyBzb2JyZSBIYWJpdGHDp8Ojb2QCBw9kFgJmD2QWAgIBD2QWAgIBD2QWBgIBDxYCHwQCARYCZg9kFgJmDxUCQWh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9QdWJsaXNoaW5nSW1hZ2VzL2hvbWUvQmFubmVyX2hvbWVfQkcuanBnQWh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9QdWJsaXNoaW5nSW1hZ2VzL2hvbWUvQmFubmVyX2hvbWVfQkcuanBnZAIJDw8WAh8DBQ48cD4mIzE2MDsgPC9wPmRkAgsPFgIfBAIBFgJmD2QWAmYPFQKNAWh0dHBzOi8vd3d3LmxvdGVyaWFzb25saW5lLmNhaXhhLmdvdi5ici9zaWxjZS13ZWIvP3V0bV9zb3VyY2U9c2l0ZV9jYWl4YSZ1dG1fbWVkaXVtPWhvbWUmdXRtX2NhbXBhaWduPWxvdGVyaWFzb25saW5lJnV0bV90ZXJtPW1lZ2EjL21lZ2Etc2VuYQ9DbGlxdWUgZSBhcG9zdGVkBSZnX2Q2YWQzZWI2X2VjOTJfNDA4YV84MzliX2M4YTI1M2UyMzI4YQ9kFgJmDxYEHgVjbGFzcwUfbXMtcnRlLWVtYmVkY29kZSBtcy1ydGUtZW1iZWR3cB4JaW5uZXJodG1sBcMaPHN0eWxlPg0KCS8qYm90w6NvIGRlIHBhc3NhZ2VtIGRlIGhvbWUqLyANCgkvKnNsaWRlciAtIG11ZGEgdGVsYSovDQoJLnNsaWRlci1uYXZ7DQoJCXRvcDogNjUlOw0KCX0NCgkvKnTDrXR1bG8qLw0KCS5naWdhew0KCQkvKmZvbnQtc2l6ZTo0cmVtICFpbXBvcnRhbnQ7Ki8NCgkJZm9udC1zaXplOjMuNnJlbSAhaW1wb3J0YW50Ow0KCX0NCgkvKm7Do28gYXBhcmVjZSBubyBkZXNrdG9wKi8NCgkub25seS1tb2JpbGV7DQoJCWRpc3BsYXk6IG5vbmUgIWltcG9ydGFudDsNCgl9DQoJLypkaXNwb3NpdGl2b3MgbcOzdmVpcyovDQoJQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMzcuNDllbSl7DQoJCS8qdMOtdHVsbyovDQoJCWgyLmdpZ2F7DQoJCQlmb250LXNpemU6IDIuNXJlbSAhaW1wb3J0YW50Ow0KCQkJbGV0dGVyLXNwYWNpbmc6IC0xcHggIWltcG9ydGFudDsNCgkJfQ0KCQkvKmNsYXNzZSBhcGFyZWNlIHNvbWVudGUgbm8gbW9iaWxlKi8NCgkJLm9ubHktbW9iaWxlew0KCQkJZGlzcGxheTogdW5zZXQgIWltcG9ydGFudDsNCgkJfQ0KCQkvKmNsYXNzZSBuw6NvIGFwYXJlY2Ugbm8gbW9iaWxlKi8NCgkJLm5vLW1vYmlsZXsNCgkJCWRpc3BsYXk6IG5vbmUgIWltcG9ydGFudDsNCgkJfQ0KCQkvKmJvdGFvIC0gdG9kb3MqLw0KCQkuYWN0aW9uew0KCQkJbWFyZ2luLWJvdHRvbTogMjVweCAhaW1wb3J0YW50Ow0KCQl9DQoJfQ0KCS8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qLw0KCS8qIC0tLWNsYXNzZV8xLS0tICovDQoJLyp0ZWxhIGdyYW5kZSovDQoNCgkvKnTDrXR1bG8qLw0KCWgyLnRpdGxlLTF7DQoJfQ0KCS8qaW1hZ2VtKi8NCgkuYXJ0aWNsZS1pbGx1c3RyYXRpb24tMSB7DQoJCXJpZ2h0OiA1cHggIWltcG9ydGFudDsNCgl9DQoJLypib3RhbyovDQoJLmFjdGlvbi0xew0KCX0NCg0KCS8qdGVsYSBtw6lkaWEqLw0KCUBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDEwOS40OWVtKXsNCgkJLmFydGljbGUtaWxsdXN0cmF0aW9uLTF7DQoJCQkNCgkJfQ0KCX0NCgkvKnRlbGEgcGVxdWVuYSovDQoJQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTQuNDllbSl7DQoJCWgyLnRpdGxlLTEgew0KCQl9DQoJCS5hcnRpY2xlLWlsbHVzdHJhdGlvbi0xew0KCQkJDQoJCX0NCgl9DQoJLyptb2JpbGUqLw0KCUBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDM3LjQ5ZW0pew0KCQloMi50aXRsZS0xew0KCQl9DQoJCQ0KCQkuYXJ0aWNsZS1pbGx1c3RyYXRpb24tMSB7DQoJCQl3aWR0aDogMjUwcHggIWltcG9ydGFudDsNCgkJCXRvcDogMzE1cHggIWltcG9ydGFudDsNCgkJfQ0KCQkuYWN0aW9uLTEgew0KCQl9DQoJfQ0KCS8qIEZJTSAtLS1jbGFzc2VfMS0tLSAqLw0KDQoJLyogLS0tY2xhc3NlXzItLS0gKi8NCgkvKnRlbGEgZ3JhbmRlKi8NCg0KCS8qdMOtdHVsbyovDQoJaDIudGl0bGUtMnsNCgkJZm9udC1zaXplOiA0LjZyZW0gIWltcG9ydGFudDsNCgl9DQoJLyppbWFnZW0qLw0KCS5hcnRpY2xlLWlsbHVzdHJhdGlvbi0yIHsNCgkJcmlnaHQ6IDVweCAhaW1wb3J0YW50Ow0KCX0NCgkvKmJvdGFvKi8NCgkuYWN0aW9uLTJ7DQoJfQ0KDQoJLyp0ZWxhIG3DqWRpYSovDQoJQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMTA5LjQ5ZW0pew0KCQkuYXJ0aWNsZS1pbGx1c3RyYXRpb24tMnsNCgkJCQ0KCQl9DQoJfQ0KCS8qdGVsYSBwZXF1ZW5hKi8NCglAbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA5NC40OWVtKXsNCgkJaDIudGl0bGUtMiB7DQoJCX0NCgkJLmFydGljbGUtaWxsdXN0cmF0aW9uLTJ7DQoJCQkNCgkJfQ0KCX0NCgkvKm1vYmlsZSovDQoJQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMzcuNDllbSl7DQoJCWgyLnRpdGxlLTJ7DQoJCQlmb250LXNpemU6IDMuNmVtICFpbXBvcnRhbnQ7DQoJCQlsaW5lLWhlaWdodDogLjllbSAhaW1wb3J0YW50Ow0KCQl9DQoJCQ0KCQkuYXJ0aWNsZS1pbGx1c3RyYXRpb24tMiB7DQoJCQl0b3A6IDI3MHB4ICFpbXBvcnRhbnQ7DQoJCX0NCgkJLmFjdGlvbi0yIHsNCgkJCW1hcmdpbi10b3A6IDM5NXB4ICFpbXBvcnRhbnQ7DQoJCX0NCgl9DQoJLyogRklNIC0tLWNsYXNzZV8yLS0tICovDQoNCg0KCX0NCgkNCjwvc3R5bGU+DQo8c2NyaXB0Pg0KLy8JY2xhc3NlIAkgICBwb3MgIGl0ZW0JDQoJY2xhc3NlXzEgPSAwOyAvL0F1eMOtbGlvDQovLwljbGFzc2VfMiA9IDsgLy9QUk9OQU1QRQ0KLy8JY2xhc3NlXzMgPSAxOyAvL3ZhemlvDQoNCglpbWcxID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgiLmFydGljbGUtaWxsdXN0cmF0aW9uIilbY2xhc3NlXzFdOw0KCWJ0bjEgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCIuYWN0aW9uIilbY2xhc3NlXzFdOw0KCXR0bDEgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCIuZ2lnYSIpW2NsYXNzZV8xXTsNCg0KLyoNCglpbWcyID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgiLmFydGljbGUtaWxsdXN0cmF0aW9uIilbY2xhc3NlXzJdOw0KCWltZzIuc3R5bGUuZGlzcGxheSA9ICJub25lIjsNCglidG4yID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgiLmFjdGlvbiIpW2NsYXNzZV8yXTsNCgl0dGwyID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgiLmdpZ2EiKVtjbGFzc2VfMl07DQoqLw0KCS8qDQoJaW1nMyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoIi5hcnRpY2xlLWlsbHVzdHJhdGlvbiIpW2NsYXNzZV8zXTsNCglpbWczLnN0eWxlLmRpc3BsYXkgPSAibm9uZSI7DQoJYnRuMyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoIi5hY3Rpb24iKVtjbGFzc2VfM107DQoJdHRsMyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoIi5naWdhIilbY2xhc3NlXzNdOw0KCSovDQoJd2luZG93Lm9ubG9hZCA9IGZ1bmN0aW9uKCl7IA0KDQoJCWltZzEuY2xhc3NMaXN0LmFkZCgiYXJ0aWNsZS1pbGx1c3RyYXRpb24tMSIpOw0KCQlidG4xLmNsYXNzTGlzdC5hZGQoImFjdGlvbi0xIik7DQoJCXR0bDEuY2xhc3NMaXN0LmFkZCgidGl0bGUtMSIpOw0KDQovKg0KCQlpbWcyLmNsYXNzTGlzdC5hZGQoImFydGljbGUtaWxsdXN0cmF0aW9uLTIiKTsNCgkJYnRuMi5jbGFzc0xpc3QuYWRkKCJhY3Rpb24tMiIpOw0KCQl0dGwyLmNsYXNzTGlzdC5hZGQoInRpdGxlLTIiKTsNCiovDQovKg0KCQlpbWczLmNsYXNzTGlzdC5hZGQoImFydGljbGUtaWxsdXN0cmF0aW9uLTMiKTsNCgkJYnRuMy5jbGFzc0xpc3QuYWRkKCJhY3Rpb24tMyIpOw0KCQl0dGwzLmNsYXNzTGlzdC5hZGQoInRpdGxlLTMiKTsNCiovDQovLwkJaW1nMi5zdHlsZS5kaXNwbGF5ID0gImJsb2NrIjsNCi8vCQlpbWczLnN0eWxlLmRpc3BsYXkgPSAiYmxvY2siOw0KCX0NCiAgICAgJCgnc3BhbltpZCQ9IkxhYmVsMSInKS5oaWRlKCk7DQo8L3NjcmlwdD5kAggPZBYCAgMPFgIfAwWZjQIgICAgICAgIDxkaXYgY2xhc3M9InNlY3Rpb24iPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgIDxoZWFkZXIgaWQ9ImhlYWRlci1ob21lIiBjbGFzcz0ibWFpbi1oZWFkZXIiPjwhLS0gSW5pY2lvIGhlYWRlciBtZW51IC0tPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgIDxkaXYgaWQ9Im1haW4tbG9nbyIgdGFiaW5kZXg9IjIiIGNsYXNzPSJub2luZGV4Ij4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj0iLyIgdGl0bGU9IiIgY2xhc3M9ImlyIj48c3BhbiBjbGFzcz0idGl0bGUtaGlkZS1sb2dvIj5DYWl4YSBFY29uw7RtaWNhIEZlZGVyYWw8L3NwYW4+PC9hPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICA8L2Rpdj4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImhlYWRlci1jb250ZW50IG5vaW5kZXgiPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgPG5hdiBjbGFzcz0iaG90bGlua3MgY2xlYXJmaXgiPjwhLS0gaG90bGlua3MgLS0+DQogICAgICAgICAgICAgICAgICAgICAgICA8dWwgY2xhc3M9ImFpbmZvIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGkgY2xhc3M9ImludGVncmlkYWRlIj48YSBocmVmPSIvc29icmUtYS1jYWl4YS9nb3Zlcm5hbmNhLWNvcnBvcmF0aXZhL2ludGVncmlkYWRlLyIgdGl0bGU9IkludGVncmlkYWRlIENBSVhBIj5JbnRlZ3JpZGFkZSBDQUlYQTwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0iaW5mb3JtYWNhbyI+PGEgaHJlZj0iL2FjZXNzby1hLWluZm9ybWFjYW8vIiB0aXRsZT0iQWNlc3NvIMOgIGluZm9ybWHDp8OjbyI+QWNlc3NvIMOgIGluZm9ybWHDp8OjbzwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC91bD4NCiAgICAgICAgICAgICAgICAgICAgICAgIDx1bCBjbGFzcz0ibGFuZ3VhZ2VzIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iL3NvYnJlLWEtY2FpeGEvcmVsYWNvZXMtY29tLWludmVzdGlkb3JlcyIgdGFiaW5kZXg9IjEzIiAgdGl0bGU9IlJJIiA+Ukk8L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iL3NpdGUvZW5nbGlzaC9maW5hbmNpYWwtaW5mb3JtYXRpb24vUGFnaW5hcy9kZWZhdWx0LmFzcHgiIHRhYmluZGV4PSIxNCIgIHRpdGxlPSJFTiIgPi9FTjwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0icnliZW5hIj48YSBjbGFzcz0iaWNvX2xpYnJhc18yMDExIiAgdGFiaW5kZXg9IjE1IiB0aXRsZT0iVHJhZHV0b3IgZGUgbGlicmFzIiA+VHJhZHV0b3IgZGUgbGlicmFzPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICA8L3VsPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHVsPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvYWNlc3NvLWEtaW5mb3JtYWNhby8iIHRhYmluZGV4PSIxMCIgdGl0bGU9IlRyYW5zcGFyw6puY2lhIiA+VHJhbnNwYXLDqm5jaWE8L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iL3NpdGUvcGFnaW5hcy9kb3dubG9hZHMuYXNweCIgdGFiaW5kZXg9IjExIiB0aXRsZT0iRG93bmxvYWRzIiA+RG93bmxvYWRzPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9Ii9zb2JyZS1hLWNhaXhhIiB0YWJpbmRleD0iMTIiIHRpdGxlPSJTb2JyZSBhIENBSVhBIiA+U29icmUgYSBDQUlYQTwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC91bD4NCjx1bCBpZD0idG9wLWxlZnQtbWVudSIgY2xhc3M9Im1lbnUtaGVhZGVyLWluZGV4Ij4NCjxsaT48c3BhbiBjbGFzcz0iZGl2aXNvciI+PC9zcGFuPjxhIGhyZWY9Ii92b2NlLyIgdGFiaW5kZXg9IjcidGl0bGU9IiBWb2PDqiAiPjxzdHJvbmc+IFZvY8OqIDwvc3Ryb25nPjwvYT48c3BhbiBjbGFzcz0iZGl2aXNvciI+PC9zcGFuPjwvbGk+DQo8bGk+PGEgaHJlZj0iL2VtcHJlc2EidGFiaW5kZXg9IjgiIHRpdGxlPSIgRW1wcmVzYSAiPjxzdHJvbmc+IEVtcHJlc2EgPC9zdHJvbmc+PC9hPjxzcGFuIGNsYXNzPSJkaXZpc29yIj48L3NwYW4+PC9saT4NCjxsaT48YSBocmVmPSIvaW52ZXN0aW1lbnRvcyJ0YWJpbmRleD0iOSIgdGl0bGU9IkludmVzdGltZW50b3MiPjxzdHJvbmc+SW52ZXN0aW1lbnRvczwvc3Ryb25nPjwvYT48c3BhbiBjbGFzcz0iZGl2aXNvciI+PC9zcGFuPjwvbGk+DQo8bGk+PGEgaHJlZj0iL29wZW5iYW5raW5nInRhYmluZGV4PSIxMCIgdGl0bGU9Ik9wZW4gQmFua2luZyI+PHN0cm9uZz5PcGVuIEJhbmtpbmc8L3N0cm9uZz48L2E+PHNwYW4gY2xhc3M9ImRpdmlzb3IiPjwvc3Bhbj48L2xpPg0KPC91bD4NCiAgICAgICAgICAgICAgICAgICAgPC9uYXY+PCEtLSBob3RsaW5rcyAtLT4NCiAgICAgICAgICAgICAgICAgICAgPG5hdiBpZD0ibWFpbi1uYXYiIGNsYXNzPSJjbGVhcmZpeCI+PCEtLSBtYWlubmF2IC0tPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ibWFpbi1tZW51IG5vaW5kZXgiPjwhLS0gbWFpbi1tZW51IC0tPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIG5hbWU9Im1lbnVQcmluY2lwYWwiIGlkPSJtZW51UHJpbmNpcGFsIiBjbGFzcz0iaGlkZSIgYWNjZXNza2V5PSIyIj5NZW51IFByaW5jaXBhbDwvYT4NCjx1bCBpZD0ibWVudS1wcmluY2lwYWwiPjwhLS0gTWVudSBwcmluY2lwYWwgLS0+DQo8bGkgY2xhc3M9Imhhcy1zdWJtZW51Ij4NCjxhIGhyZWY9IiMiIHRhYmluZGV4PSIzIiB0aXRsZT0iUHJvZHV0b3MiID5Qcm9kdXRvczwvYT4NCjxkaXYgY2xhc3M9InN1Ym1lbnUgc3VibWVudS1wcm9kdXRvcyBjbGVhcmZpeCI+PCEtLSBTdWIgTWVudSAtLT4NCiAgIDxkaXYgY2xhc3M9InN1Ym1lbnUtY29sdW1uIj4NCiAgICAgIDxwIGNsYXNzPSJzdWJtZW51LXRpdGxlIj5QYXJhIFZvY8OqIDwvcD4NCjx1bD4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcGl4L1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3BpeC9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPlBpeCBwYXJhIFZvY8OqPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY29udGFzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY29udGFzIiA+Q29udGFzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvaGFiaXRhY2FvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvaGFiaXRhY2FvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiA+SGFiaXRhw6fDo288L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvdm9jZS9jYXJ0b2VzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY2FydG9lcyIgPkNhcnTDtWVzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvbmVnb2NpYWNhby9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL25lZ29jaWFjYW8vUGFnaW5hcy9kZWZhdWx0LmFzcHgiID5OZWdvY2llIHN1YSBkw612aWRhPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvcG91cGFuY2EtZS1pbnZlc3RpbWVudG9zIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvcG91cGFuY2EtZS1pbnZlc3RpbWVudG9zIiA+SW52ZXN0aW1lbnRvczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL3BvdXBhbmNhLWUtaW52ZXN0aW1lbnRvcy9wb3VwYW5jYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL3BvdXBhbmNhLWUtaW52ZXN0aW1lbnRvcy9wb3VwYW5jYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPlBvdXBhbsOnYTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL1NlZ3Vyb3MiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvdm9jZS9TZWd1cm9zIiA+U2VndXJvczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL3Byb21vY29lcyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL3Byb21vY29lcyIgPlByb21vw6fDtWVzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cDovL2xvdGVyaWFzLmNhaXhhLmdvdi5ici8iIHRpdGxlPSJodHRwOi8vbG90ZXJpYXMuY2FpeGEuZ292LmJyLyIgPkxvdGVyaWFzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2VtcHJlc2EvY3JlZGl0by1maW5hbmNpYW1lbnRvL2NyZWRpdG8tcnVyYWwiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9jcmVkaXRvLWZpbmFuY2lhbWVudG8vY3JlZGl0by1ydXJhbCIgPkNyw6lkaXRvIFJ1cmFsPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY3JlZGl0by1maW5hbmNpYW1lbnRvIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY3JlZGl0by1maW5hbmNpYW1lbnRvIiA+RW1wcsOpc3RpbW8gZSBGaW5hbmNpYW1lbnRvPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY2FtaW5ob25laXJvcy9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL2NhbWluaG9uZWlyb3MvUGFnaW5hcy9kZWZhdWx0LmFzcHgiID5DYW1pbmhvbmVpcm88L2E+PC9saT4NCjxsaSBjbGFzcz0ic2VlLW1vcmUiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlIiB0aXRsZT0iVG9kb3Mgb3MgcHJvZHV0b3MgcGFyYSB2b2PDqiIgPlRvZG9zIG9zIHByb2R1dG9zIHBhcmEgdm9jw6og4oC6PC9hPjwvbGk+DQo8L3VsPg0KPC9kaXY+DQogICA8ZGl2IGNsYXNzPSJzdWJtZW51LWNvbHVtbiI+DQogICAgICA8cCBjbGFzcz0ic3VibWVudS10aXRsZSI+RW1wcmVzYSA8L3A+DQo8dWw+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3BpeC9wYXJhLXN1YS1lbXByZXNhL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3BpeC9wYXJhLXN1YS1lbXByZXNhL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiA+UGl4IHBhcmEgc3VhIEVtcHJlc2E8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvdm9jZS9uZWdvY2lhY2FvL1BhZ2luYXMvZGVmYXVsdC5hc3B4I2VtcHJlc2EiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvdm9jZS9uZWdvY2lhY2FvL1BhZ2luYXMvZGVmYXVsdC5hc3B4I2VtcHJlc2EiID5OZWdvY2llIGEgZMOtdmlkYSBkYSBzdWEgRW1wcmVzYTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2NhcnRvZXMiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9jYXJ0b2VzIiA+Q2FydMO1ZXM8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9jcmVkaXRvLWZpbmFuY2lhbWVudG8iIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9jcmVkaXRvLWZpbmFuY2lhbWVudG8iID5DcsOpZGl0byBlIEZpbmFuY2lhbWVudG88L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9jcmVkaXRvLWZpbmFuY2lhbWVudG8vaW1vdmVpcyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2NyZWRpdG8tZmluYW5jaWFtZW50by9pbW92ZWlzIiA+SW3Ds3ZlaXM8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcG9kZXItcHVibGljby9tb2Rlcm5pemFjYW8tZ2VzdGFvL3NlcnZpY29zLWNhaXhhL3NlcnZpY29zLWp1ZGljaWFyaW9zIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3BvZGVyLXB1YmxpY28vbW9kZXJuaXphY2FvLWdlc3Rhby9zZXJ2aWNvcy1jYWl4YS9zZXJ2aWNvcy1qdWRpY2lhcmlvcyIgPlNlcnZpw6dvcyBwYXJhIG8gSnVkaWNpw6FyaW88L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9jcmVkaXRvLWZpbmFuY2lhbWVudG8vY3JlZGl0by1ydXJhbCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2NyZWRpdG8tZmluYW5jaWFtZW50by9jcmVkaXRvLXJ1cmFsIiA+Q3LDqWRpdG8gUnVyYWw8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9jb25lY3RpdmlkYWRlLXNvY2lhbCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2NvbmVjdGl2aWRhZGUtc29jaWFsIiA+Q29uZWN0aXZpZGFkZSBTb2NpYWw8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9mZ3RzLWVtcHJlc2FzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2VtcHJlc2EvZmd0cy1lbXByZXNhcyIgPkZHVFM8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9pbnN0aXR1aWNvZXMtZW5zaW5vLWZpZXMvUGFnaW5hcy9kZWZhdWx0LmFzcHgiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9pbnN0aXR1aWNvZXMtZW5zaW5vLWZpZXMvUGFnaW5hcy9kZWZhdWx0LmFzcHgiID5GSUVTPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2VtcHJlc2EvY29udGFzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2VtcHJlc2EvY29udGFzIiA+Q29udGFzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2Z1bmRvcy1pbnZlc3RpbWVudG8vZW1wcmVzYS9wb3VwYW5jYS1lLWludmVzdGltZW50b3MiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZnVuZG9zLWludmVzdGltZW50by9lbXByZXNhL3BvdXBhbmNhLWUtaW52ZXN0aW1lbnRvcyIgPkludmVzdGltZW50b3M8L2E+PC9saT4NCjxsaSBjbGFzcz0ic2VlLW1vcmUiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhIiB0aXRsZT0iVG9kb3Mgb3MgcHJvZHV0b3MgcGFyYSBlbXByZXNhcyIgPlRvZG9zIG9zIHByb2R1dG9zIHBhcmEgZW1wcmVzYXMg4oC6PC9hPjwvbGk+DQo8L3VsPg0KPC9kaXY+DQo8L2Rpdj4NCjwvbGk+DQo8bGkgY2xhc3M9Imhhcy1zdWJtZW51Ij4NCjxhIGhyZWY9IiMiIHRhYmluZGV4PSI0IiB0aXRsZT0iQmVuZWbDrWNpb3MgZSBQcm9ncmFtYXMiID5CZW5lZsOtY2lvcyBlIFByb2dyYW1hczwvYT4NCjxkaXYgY2xhc3M9InN1Ym1lbnUgc3VibWVudS1iZW5lZmljaW9zIGNsZWFyZml4Ij48IS0tIFN1YiBNZW51IC0tPg0KICAgPGRpdiBjbGFzcz0ic3VibWVudS1jb2x1bW4iPg0KICAgICAgPHAgY2xhc3M9InN1Ym1lbnUtdGl0bGUiPkJlbmVmw61jaW9zIGRvIHRyYWJhbGhhZG9yIDwvcD4NCjx1bD4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYmVuZWZpY2lvcy10cmFiYWxoYWRvci9mZ3RzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2JlbmVmaWNpb3MtdHJhYmFsaGFkb3IvZmd0cyIgPkZHVFM8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYmVuZWZpY2lvcy10cmFiYWxoYWRvci9hYm9uby1zYWxhcmlhbCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9iZW5lZmljaW9zLXRyYWJhbGhhZG9yL2Fib25vLXNhbGFyaWFsIiA+QWJvbm8gU2FsYXJpYWw8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYmVuZWZpY2lvcy10cmFiYWxoYWRvci9pbnNzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2JlbmVmaWNpb3MtdHJhYmFsaGFkb3IvaW5zcyIgPklOU1M8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYmVuZWZpY2lvcy10cmFiYWxoYWRvci9zZWd1cm8tZGVzZW1wcmVnbyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9iZW5lZmljaW9zLXRyYWJhbGhhZG9yL3NlZ3Vyby1kZXNlbXByZWdvIiA+U2VndXJvLURlc2VtcHJlZ288L2E+PC9saT4NCjxsaSBjbGFzcz0ic2VlLW1vcmUiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9iZW5lZmljaW9zLXRyYWJhbGhhZG9yIiB0aXRsZT0iVHVkbyBzb2JyZSBvcyBiZW5lZsOtY2lvcyBkbyB0cmFiYWxoYWRvciIgPlR1ZG8gc29icmUgb3MgYmVuZWbDrWNpb3MgZG8gdHJhYmFsaGFkb3Ig4oC6PC9hPjwvbGk+DQo8L3VsPg0KPC9kaXY+DQogICA8ZGl2IGNsYXNzPSJzdWJtZW51LWNvbHVtbiI+DQogICAgICA8cCBjbGFzcz0ic3VibWVudS10aXRsZSI+UHJvZ3JhbWFzIHNvY2lhaXMgPC9wPg0KPHVsPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL2hhYml0YWNhby9jYXNhLXZlcmRlLWUtYW1hcmVsYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL2hhYml0YWNhby9jYXNhLXZlcmRlLWUtYW1hcmVsYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPkNhc2EgVmVyZGUgZSBBbWFyZWxhPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvaGFiaXRhY2FvL21pbmhhLWNhc2EtbWluaGEtdmlkYSIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL2hhYml0YWNhby9taW5oYS1jYXNhLW1pbmhhLXZpZGEiID5NaW5oYSBDYXNhIE1pbmhhIFZpZGE8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcHJvZ3JhbWFzLXNvY2lhaXMvYm9sc2EtZmFtaWxpYSIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9wcm9ncmFtYXMtc29jaWFpcy9ib2xzYS1mYW1pbGlhIiA+Qm9sc2EgRmFtw61saWE8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcHJvZ3JhbWFzLXNvY2lhaXMvZmllcyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9wcm9ncmFtYXMtc29jaWFpcy9maWVzIiA+RklFUzwvYT48L2xpPg0KPGxpIGNsYXNzPSJzZWUtbW9yZSI+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3Byb2dyYW1hcy1zb2NpYWlzIiB0aXRsZT0iVG9kb3Mgb3MgcHJvZ3JhbWFzIiA+VG9kb3Mgb3MgcHJvZ3JhbWFzIOKAujwvYT48L2xpPg0KPC91bD4NCjwvZGl2Pg0KICAgPGRpdiBjbGFzcz0ic3VibWVudS1jb2x1bW4iPg0KICAgICAgPHAgY2xhc3M9InN1Ym1lbnUtdGl0bGUiPkNhZGFzdHJvcyBlIFNlcnZpw6dvcyA8L3A+DQo8dWw+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2NhcnRhby1jaWRhZGFvIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2NhcnRhby1jaWRhZGFvIiA+Q2FydMOjbyBkbyBDaWRhZMOjbzwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9zZXJ2aWNvcy9jcGYiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc2Vydmljb3MvY3BmIiA+Q1BGPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2NhZGFzdHJvLXVuaWNvIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2NhZGFzdHJvLXVuaWNvIiA+Q2FkYXN0cm8gw5puaWNvPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL25pcyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9zZXJ2aWNvcy9uaXMiID5DYWRhc3RybyBOSVMgPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2RwdmF0L1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2RwdmF0L1BhZ2luYXMvZGVmYXVsdC5hc3B4IiA+RFBWQVQ8L2E+PC9saT4NCjxsaSBjbGFzcz0ic2VlLW1vcmUiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9zZXJ2aWNvcyIgdGl0bGU9IlRvZG9zIG9zIHNlcnZpw6dvcyIgPlRvZG9zIG9zIHNlcnZpw6dvcyDigLo8L2E+PC9saT4NCjwvdWw+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9saT4NCjxsaSBjbGFzcz0iaGFzLXN1Ym1lbnUiPg0KPGEgaHJlZj0iIyIgdGFiaW5kZXg9IjUiIHRpdGxlPSJBdGVuZGltZW50byIgPkF0ZW5kaW1lbnRvPC9hPg0KPGRpdiBjbGFzcz0ic3VibWVudSBzdWJtZW51LWF0ZW5kaW1lbnRvIGNsZWFyZml4Ij48IS0tIFN1YiBNZW51IC0tPg0KICAgPGRpdiBjbGFzcz0ic3VibWVudS1jb2x1bW4iPg0KICAgICAgPHAgY2xhc3M9InN1Ym1lbnUtdGl0bGUiPkNhbmFpcyA8L3A+DQo8dWw+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiA+QXRlbmRpbWVudG8gcGFyYSB2b2PDqiBlIHBhcmEgZW1wcmVzYTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by9QYWdpbmFzL2RlZmF1bHQuYXNweCN0ZWxlZm9uZXMtY2FpeGEiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYXRlbmRpbWVudG8vUGFnaW5hcy9kZWZhdWx0LmFzcHgjdGVsZWZvbmVzLWNhaXhhIiA+VGVsZWZvbmVzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4I2VuY29udHJlIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4I2VuY29udHJlIiA+RW5kZXJlw6dvczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHA6Ly9mYWxlLWNvbm9zY28uY2FpeGEuZ292LmJyLyIgdGl0bGU9Imh0dHA6Ly9mYWxlLWNvbm9zY28uY2FpeGEuZ292LmJyLyIgPkZhbGUgQ29ub3NjbzwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by9jYW5hbC1kZW51bmNpYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by9jYW5hbC1kZW51bmNpYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPkNhbmFsIGRlIERlbsO6bmNpYTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by9QYWdpbmFzL2RlZmF1bHQuYXNweCNzZXJ2aWNvcy1saW1pdGVzLWNhbmFsIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4I3NlcnZpY29zLWxpbWl0ZXMtY2FuYWwiID5TZXJ2acOnb3MgZSBsaW1pdGVzIHBvciBjYW5hbDwvYT48L2xpPg0KPGxpIGNsYXNzPSJzZWUtbW9yZSI+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iVHVkbyBzb2JyZSBhdGVuZGltZW50byIgPlR1ZG8gc29icmUgYXRlbmRpbWVudG8g4oC6PC9hPjwvbGk+DQo8L3VsPg0KPC9kaXY+DQogICA8ZGl2IGNsYXNzPSJzdWJtZW51LWNvbHVtbiI+DQogICAgICA8cCBjbGFzcz0ic3VibWVudS10aXRsZSI+Q2FuYWlzIERpZ2l0YWlzIDwvcD4NCjx1bD4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYXRlbmRpbWVudG8vYXBsaWNhdGl2b3MiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYXRlbmRpbWVudG8vYXBsaWNhdGl2b3MiID5BcGxpY2F0aXZvczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9zaXRlL1BhZ2luYXMvZG93bmxvYWRzLmFzcHgiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc2l0ZS9QYWdpbmFzL2Rvd25sb2Fkcy5hc3B4IiA+RG93bmxvYWRzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvLzItdmlhLWJvbGV0byIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by8yLXZpYS1ib2xldG8iID4ywqogdmlhIGRlIGJvbGV0b3M8L2E+PC9saT4NCjxsaSBjbGFzcz0ic2VlLW1vcmUiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by9jYW5haXMtZGlnaXRhaXMvUGFnaW5hcy9kZWZhdWx0LmFzcHg/cGtfY2FtcGFpZ249Y2FuYWlzc2V0MTUmcGtfa3dkPWxpbmtfbWVudSIgdGl0bGU9IlRvZG9zIG9zIHNlcnZpw6dvcyBlIGNhbmFpcyBkaWdpdGFpcyIgPlRvZG9zIG9zIHNlcnZpw6dvcyBlIGNhbmFpcyBkaWdpdGFpcyDigLo8L2E+PC9saT4NCjwvdWw+DQo8L2Rpdj4NCiAgIDxkaXYgY2xhc3M9InN1Ym1lbnUtY29sdW1uIj4NCiAgICAgIDxwIGNsYXNzPSJzdWJtZW51LXRpdGxlIj5JbnN0aXR1Y2lvbmFsIDwvcD4NCjx1bD4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc3VzdGVudGFiaWxpZGFkZS9pbnZlc3RpbWVudG9zLXNvY2lvYW1iaWVudGFpcy9hZ2VuY2lhLWJhcmNvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3N1c3RlbnRhYmlsaWRhZGUvaW52ZXN0aW1lbnRvcy1zb2Npb2FtYmllbnRhaXMvYWdlbmNpYS1iYXJjby9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPkFnw6puY2lhLUJhcmNvPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3N1c3RlbnRhYmlsaWRhZGUvUGFnaW5hcy9kZWZhdWx0LmFzcHgiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc3VzdGVudGFiaWxpZGFkZS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPlN1c3RlbnRhYmlsaWRhZGU8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc29icmUtYS1jYWl4YS90cmFiYWxoZS1uYS1jYWl4YSIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9zb2JyZS1hLWNhaXhhL3RyYWJhbGhlLW5hLWNhaXhhIiA+VHJhYmFsaGUgbmEgQ0FJWEE8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL2NhaXhhbm90aWNpYXMuY2FpeGEuZ292LmJyLyIgdGl0bGU9Imh0dHBzOi8vY2FpeGFub3RpY2lhcy5jYWl4YS5nb3YuYnIvIiA+Q0FJWEEgTm90w61jaWFzPC9hPjwvbGk+DQo8bGkgY2xhc3M9InNlZS1tb3JlIj48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc29icmUtYS1jYWl4YSIgdGl0bGU9IlR1ZG8gc29icmUgYSBDQUlYQSIgPlR1ZG8gc29icmUgYSBDQUlYQSDigLo8L2E+PC9saT4NCjwvdWw+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9saT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj0iL3BvZGVyLXB1YmxpY28vIiAgdGFiaW5kZXg9IjYiICB0aXRsZT0iUG9kZXIgUMO6YmxpY28iIGNsYXNzPSJzb2Z0Ij5Qb2RlciBQw7pibGljbzwvYT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9saT4gDQo8L3VsPjwhLS0gZmltIG1lbnUgcHJpbmNpcGFsIC0tPg0KPHVsIGlkPSJtZW51LXByaW5jaXBhbC1tb2JpbGUiIGNsYXNzPSJoaWRkZW4tZGVza3RvcCI+PCEtLSBNZW51IHByaW5jaXBhbCBtb2JpbGUtLT4NCjxsaSBjbGFzcz0iaGFzLXN1Ym1lbnUiPg0KPGEgaHJlZj0iIyIgdGFiaW5kZXg9IjMiIHRpdGxlPSJQYXJhIFZvY8OqIiA+UGFyYSBWb2PDqjwvYT4NCjxkaXYgY2xhc3M9InN1Ym1lbnUgc3VibWVudS1wcm9kdXRvcyBjbGVhcmZpeCI+PCEtLSBTdWIgTWVudSAtLT4NCiAgIDxkaXYgY2xhc3M9InN1Ym1lbnUtY29sdW1uIj4NCjx1bD4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcGl4L1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3BpeC9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPlBpeCBwYXJhIFZvY8OqPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY29udGFzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY29udGFzIiA+Q29udGFzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvaGFiaXRhY2FvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvaGFiaXRhY2FvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiA+SGFiaXRhw6fDo288L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvdm9jZS9jYXJ0b2VzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY2FydG9lcyIgPkNhcnTDtWVzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvbmVnb2NpYWNhby9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL25lZ29jaWFjYW8vUGFnaW5hcy9kZWZhdWx0LmFzcHgiID5OZWdvY2llIHN1YSBkw612aWRhPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvcG91cGFuY2EtZS1pbnZlc3RpbWVudG9zIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvcG91cGFuY2EtZS1pbnZlc3RpbWVudG9zIiA+SW52ZXN0aW1lbnRvczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL3BvdXBhbmNhLWUtaW52ZXN0aW1lbnRvcy9wb3VwYW5jYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL3BvdXBhbmNhLWUtaW52ZXN0aW1lbnRvcy9wb3VwYW5jYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPlBvdXBhbsOnYTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL1NlZ3Vyb3MiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvdm9jZS9TZWd1cm9zIiA+U2VndXJvczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL3Byb21vY29lcyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL3Byb21vY29lcyIgPlByb21vw6fDtWVzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cDovL2xvdGVyaWFzLmNhaXhhLmdvdi5ici8iIHRpdGxlPSJodHRwOi8vbG90ZXJpYXMuY2FpeGEuZ292LmJyLyIgPkxvdGVyaWFzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2VtcHJlc2EvY3JlZGl0by1maW5hbmNpYW1lbnRvL2NyZWRpdG8tcnVyYWwiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9jcmVkaXRvLWZpbmFuY2lhbWVudG8vY3JlZGl0by1ydXJhbCIgPkNyw6lkaXRvIFJ1cmFsPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY3JlZGl0by1maW5hbmNpYW1lbnRvIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY3JlZGl0by1maW5hbmNpYW1lbnRvIiA+RW1wcsOpc3RpbW8gZSBGaW5hbmNpYW1lbnRvPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvY2FtaW5ob25laXJvcy9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL2NhbWluaG9uZWlyb3MvUGFnaW5hcy9kZWZhdWx0LmFzcHgiID5DYW1pbmhvbmVpcm88L2E+PC9saT4NCjxsaSBjbGFzcz0ic2VlLW1vcmUiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlIiB0aXRsZT0iVG9kb3Mgb3MgcHJvZHV0b3MgcGFyYSB2b2PDqiIgPlRvZG9zIG9zIHByb2R1dG9zIHBhcmEgdm9jw6og4oC6PC9hPjwvbGk+DQo8L3VsPg0KICAgPC9kaXY+DQo8L2Rpdj4NCjwvbGk+DQo8bGkgY2xhc3M9Imhhcy1zdWJtZW51Ij4NCjxhIGhyZWY9IiMiIHRhYmluZGV4PSI0IiB0aXRsZT0iRW1wcmVzYSIgPkVtcHJlc2E8L2E+DQo8ZGl2IGNsYXNzPSJzdWJtZW51IHN1Ym1lbnUtYmVuZWZpY2lvcyBjbGVhcmZpeCI+PCEtLSBTdWIgTWVudSAtLT4NCiAgIDxkaXYgY2xhc3M9InN1Ym1lbnUtY29sdW1uIj4NCjx1bD4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcGl4L3BhcmEtc3VhLWVtcHJlc2EvUGFnaW5hcy9kZWZhdWx0LmFzcHgiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcGl4L3BhcmEtc3VhLWVtcHJlc2EvUGFnaW5hcy9kZWZhdWx0LmFzcHgiID5QaXggcGFyYSBzdWEgRW1wcmVzYTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL25lZ29jaWFjYW8vUGFnaW5hcy9kZWZhdWx0LmFzcHgjZW1wcmVzYSIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL25lZ29jaWFjYW8vUGFnaW5hcy9kZWZhdWx0LmFzcHgjZW1wcmVzYSIgPk5lZ29jaWUgYSBkw612aWRhIGRhIHN1YSBFbXByZXNhPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2VtcHJlc2EvY2FydG9lcyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2NhcnRvZXMiID5DYXJ0w7VlczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2NyZWRpdG8tZmluYW5jaWFtZW50byIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2NyZWRpdG8tZmluYW5jaWFtZW50byIgPkNyw6lkaXRvIGUgRmluYW5jaWFtZW50bzwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2NyZWRpdG8tZmluYW5jaWFtZW50by9pbW92ZWlzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2VtcHJlc2EvY3JlZGl0by1maW5hbmNpYW1lbnRvL2ltb3ZlaXMiID5JbcOzdmVpczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9wb2Rlci1wdWJsaWNvL21vZGVybml6YWNhby1nZXN0YW8vc2Vydmljb3MtY2FpeGEvc2Vydmljb3MtanVkaWNpYXJpb3MiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcG9kZXItcHVibGljby9tb2Rlcm5pemFjYW8tZ2VzdGFvL3NlcnZpY29zLWNhaXhhL3NlcnZpY29zLWp1ZGljaWFyaW9zIiA+U2VydmnDp29zIHBhcmEgbyBKdWRpY2nDoXJpbzwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2NyZWRpdG8tZmluYW5jaWFtZW50by9jcmVkaXRvLXJ1cmFsIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2VtcHJlc2EvY3JlZGl0by1maW5hbmNpYW1lbnRvL2NyZWRpdG8tcnVyYWwiID5DcsOpZGl0byBSdXJhbDwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2NvbmVjdGl2aWRhZGUtc29jaWFsIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2VtcHJlc2EvY29uZWN0aXZpZGFkZS1zb2NpYWwiID5Db25lY3RpdmlkYWRlIFNvY2lhbDwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2ZndHMtZW1wcmVzYXMiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9mZ3RzLWVtcHJlc2FzIiA+RkdUUzwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2luc3RpdHVpY29lcy1lbnNpbm8tZmllcy9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9lbXByZXNhL2luc3RpdHVpY29lcy1lbnNpbm8tZmllcy9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPkZJRVM8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9jb250YXMiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZW1wcmVzYS9jb250YXMiID5Db250YXM8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvZnVuZG9zLWludmVzdGltZW50by9lbXByZXNhL3BvdXBhbmNhLWUtaW52ZXN0aW1lbnRvcyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9mdW5kb3MtaW52ZXN0aW1lbnRvL2VtcHJlc2EvcG91cGFuY2EtZS1pbnZlc3RpbWVudG9zIiA+SW52ZXN0aW1lbnRvczwvYT48L2xpPg0KPGxpIGNsYXNzPSJzZWUtbW9yZSI+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2VtcHJlc2EiIHRpdGxlPSJUb2RvcyBvcyBwcm9kdXRvcyBwYXJhIGVtcHJlc2FzIiA+VG9kb3Mgb3MgcHJvZHV0b3MgcGFyYSBlbXByZXNhcyDigLo8L2E+PC9saT4NCjwvdWw+DQogICA8L2Rpdj4NCjwvZGl2Pg0KPC9saT4NCjxsaSBjbGFzcz0iaGFzLXN1Ym1lbnUiPg0KPGEgaHJlZj0iIyIgdGFiaW5kZXg9IjUiIHRpdGxlPSJCZW5lZsOtY2lvcyBlIFByb2dyYW1hcyIgPkJlbmVmw61jaW9zIGUgUHJvZ3JhbWFzPC9hPg0KPGRpdiBjbGFzcz0ic3VibWVudSBzdWJtZW51LWF0ZW5kaW1lbnRvIGNsZWFyZml4Ij48IS0tIFN1YiBNZW51IC0tPg0KICAgPGRpdiBjbGFzcz0ic3VibWVudS1jb2x1bW4iPg0KICAgICAgPHAgY2xhc3M9InN1Ym1lbnUtdGl0bGUiPkJlbmVmw61jaW9zIGRvIHRyYWJhbGhhZG9yIDwvcD4NCjx1bD4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYmVuZWZpY2lvcy10cmFiYWxoYWRvci9mZ3RzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2JlbmVmaWNpb3MtdHJhYmFsaGFkb3IvZmd0cyIgPkZHVFM8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYmVuZWZpY2lvcy10cmFiYWxoYWRvci9hYm9uby1zYWxhcmlhbCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9iZW5lZmljaW9zLXRyYWJhbGhhZG9yL2Fib25vLXNhbGFyaWFsIiA+QWJvbm8gU2FsYXJpYWw8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYmVuZWZpY2lvcy10cmFiYWxoYWRvci9pbnNzIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2JlbmVmaWNpb3MtdHJhYmFsaGFkb3IvaW5zcyIgPklOU1M8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYmVuZWZpY2lvcy10cmFiYWxoYWRvci9zZWd1cm8tZGVzZW1wcmVnbyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9iZW5lZmljaW9zLXRyYWJhbGhhZG9yL3NlZ3Vyby1kZXNlbXByZWdvIiA+U2VndXJvLURlc2VtcHJlZ288L2E+PC9saT4NCjxsaSBjbGFzcz0ic2VlLW1vcmUiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9iZW5lZmljaW9zLXRyYWJhbGhhZG9yIiB0aXRsZT0iVHVkbyBzb2JyZSBvcyBiZW5lZsOtY2lvcyBkbyB0cmFiYWxoYWRvciIgPlR1ZG8gc29icmUgb3MgYmVuZWbDrWNpb3MgZG8gdHJhYmFsaGFkb3Ig4oC6PC9hPjwvbGk+DQo8L3VsPg0KPC9kaXY+DQogICA8ZGl2IGNsYXNzPSJzdWJtZW51LWNvbHVtbiI+DQogICAgICA8cCBjbGFzcz0ic3VibWVudS10aXRsZSI+UHJvZ3JhbWFzIHNvY2lhaXMgPC9wPg0KPHVsPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL2hhYml0YWNhby9jYXNhLXZlcmRlLWUtYW1hcmVsYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL2hhYml0YWNhby9jYXNhLXZlcmRlLWUtYW1hcmVsYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPkNhc2EgVmVyZGUgZSBBbWFyZWxhPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3ZvY2UvaGFiaXRhY2FvL21pbmhhLWNhc2EtbWluaGEtdmlkYSIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici92b2NlL2hhYml0YWNhby9taW5oYS1jYXNhLW1pbmhhLXZpZGEiID5NaW5oYSBDYXNhIE1pbmhhIFZpZGE8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcHJvZ3JhbWFzLXNvY2lhaXMvYm9sc2EtZmFtaWxpYSIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9wcm9ncmFtYXMtc29jaWFpcy9ib2xzYS1mYW1pbGlhIiA+Qm9sc2EgRmFtw61saWE8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvcHJvZ3JhbWFzLXNvY2lhaXMvZmllcyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9wcm9ncmFtYXMtc29jaWFpcy9maWVzIiA+RklFUzwvYT48L2xpPg0KPGxpIGNsYXNzPSJzZWUtbW9yZSI+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3Byb2dyYW1hcy1zb2NpYWlzIiB0aXRsZT0iVG9kb3Mgb3MgcHJvZ3JhbWFzIiA+VG9kb3Mgb3MgcHJvZ3JhbWFzIOKAujwvYT48L2xpPg0KPC91bD4NCjwvZGl2Pg0KICAgPGRpdiBjbGFzcz0ic3VibWVudS1jb2x1bW4iPg0KICAgICAgPHAgY2xhc3M9InN1Ym1lbnUtdGl0bGUiPkNhZGFzdHJvcyBlIFNlcnZpw6dvcyA8L3A+DQo8dWw+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2NhcnRhby1jaWRhZGFvIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2NhcnRhby1jaWRhZGFvIiA+Q2FydMOjbyBkbyBDaWRhZMOjbzwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9zZXJ2aWNvcy9jcGYiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc2Vydmljb3MvY3BmIiA+Q1BGPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2NhZGFzdHJvLXVuaWNvIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2NhZGFzdHJvLXVuaWNvIiA+Q2FkYXN0cm8gw5puaWNvPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL25pcyIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9zZXJ2aWNvcy9uaXMiID5DYWRhc3RybyBOSVMgPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2RwdmF0L1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3NlcnZpY29zL2RwdmF0L1BhZ2luYXMvZGVmYXVsdC5hc3B4IiA+RFBWQVQ8L2E+PC9saT4NCjxsaSBjbGFzcz0ic2VlLW1vcmUiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9zZXJ2aWNvcyIgdGl0bGU9IlRvZG9zIG9zIHNlcnZpw6dvcyIgPlRvZG9zIG9zIHNlcnZpw6dvcyDigLo8L2E+PC9saT4NCjwvdWw+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9saT4NCjxsaSBjbGFzcz0iaGFzLXN1Ym1lbnUiPg0KPGEgaHJlZj0iIyIgdGFiaW5kZXg9IjYiIHRpdGxlPSJBdGVuZGltZW50byIgPkF0ZW5kaW1lbnRvPC9hPg0KPGRpdiBjbGFzcz0ic3VibWVudSBzdWJtZW51LXByb2R1dG9zIGNsZWFyZml4Ij48IS0tIFN1YiBNZW51IC0tPg0KICAgPGRpdiBjbGFzcz0ic3VibWVudS1jb2x1bW4iPg0KICAgICAgPHAgY2xhc3M9InN1Ym1lbnUtdGl0bGUiPkNhbmFpcyA8L3A+DQo8dWw+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiA+QXRlbmRpbWVudG8gcGFyYSB2b2PDqiBlIHBhcmEgZW1wcmVzYTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by9QYWdpbmFzL2RlZmF1bHQuYXNweCN0ZWxlZm9uZXMtY2FpeGEiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYXRlbmRpbWVudG8vUGFnaW5hcy9kZWZhdWx0LmFzcHgjdGVsZWZvbmVzLWNhaXhhIiA+VGVsZWZvbmVzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4I2VuY29udHJlIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4I2VuY29udHJlIiA+RW5kZXJlw6dvczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHA6Ly9mYWxlLWNvbm9zY28uY2FpeGEuZ292LmJyLyIgdGl0bGU9Imh0dHA6Ly9mYWxlLWNvbm9zY28uY2FpeGEuZ292LmJyLyIgPkZhbGUgQ29ub3NjbzwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by9jYW5hbC1kZW51bmNpYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by9jYW5hbC1kZW51bmNpYS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPkNhbmFsIGRlIERlbsO6bmNpYTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by9QYWdpbmFzL2RlZmF1bHQuYXNweCNzZXJ2aWNvcy1saW1pdGVzLWNhbmFsIiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4I3NlcnZpY29zLWxpbWl0ZXMtY2FuYWwiID5TZXJ2acOnb3MgZSBsaW1pdGVzIHBvciBjYW5hbDwvYT48L2xpPg0KPGxpIGNsYXNzPSJzZWUtbW9yZSI+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iVHVkbyBzb2JyZSBhdGVuZGltZW50byIgPlR1ZG8gc29icmUgYXRlbmRpbWVudG8g4oC6PC9hPjwvbGk+DQo8L3VsPg0KPC9kaXY+DQogICA8ZGl2IGNsYXNzPSJzdWJtZW51LWNvbHVtbiI+DQogICAgICA8cCBjbGFzcz0ic3VibWVudS10aXRsZSI+Q2FuYWlzIERpZ2l0YWlzIDwvcD4NCjx1bD4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYXRlbmRpbWVudG8vYXBsaWNhdGl2b3MiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvYXRlbmRpbWVudG8vYXBsaWNhdGl2b3MiID5BcGxpY2F0aXZvczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9zaXRlL1BhZ2luYXMvZG93bmxvYWRzLmFzcHgiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc2l0ZS9QYWdpbmFzL2Rvd25sb2Fkcy5hc3B4IiA+RG93bmxvYWRzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL2F0ZW5kaW1lbnRvLzItdmlhLWJvbGV0byIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by8yLXZpYS1ib2xldG8iID4ywqogdmlhIGRlIGJvbGV0b3M8L2E+PC9saT4NCjxsaSBjbGFzcz0ic2VlLW1vcmUiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9hdGVuZGltZW50by9jYW5haXMtZGlnaXRhaXMvUGFnaW5hcy9kZWZhdWx0LmFzcHg/cGtfY2FtcGFpZ249Y2FuYWlzc2V0MTUmcGtfa3dkPWxpbmtfbWVudSIgdGl0bGU9IlRvZG9zIG9zIHNlcnZpw6dvcyBlIGNhbmFpcyBkaWdpdGFpcyIgPlRvZG9zIG9zIHNlcnZpw6dvcyBlIGNhbmFpcyBkaWdpdGFpcyDigLo8L2E+PC9saT4NCjwvdWw+DQo8L2Rpdj4NCiAgIDxkaXYgY2xhc3M9InN1Ym1lbnUtY29sdW1uIj4NCiAgICAgIDxwIGNsYXNzPSJzdWJtZW51LXRpdGxlIj5JbnN0aXR1Y2lvbmFsIDwvcD4NCjx1bD4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc3VzdGVudGFiaWxpZGFkZS9pbnZlc3RpbWVudG9zLXNvY2lvYW1iaWVudGFpcy9hZ2VuY2lhLWJhcmNvL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3N1c3RlbnRhYmlsaWRhZGUvaW52ZXN0aW1lbnRvcy1zb2Npb2FtYmllbnRhaXMvYWdlbmNpYS1iYXJjby9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPkFnw6puY2lhLUJhcmNvPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iaHR0cHM6Ly93d3cuY2FpeGEuZ292LmJyL3N1c3RlbnRhYmlsaWRhZGUvUGFnaW5hcy9kZWZhdWx0LmFzcHgiIHRpdGxlPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc3VzdGVudGFiaWxpZGFkZS9QYWdpbmFzL2RlZmF1bHQuYXNweCIgPlN1c3RlbnRhYmlsaWRhZGU8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc29icmUtYS1jYWl4YS90cmFiYWxoZS1uYS1jYWl4YSIgdGl0bGU9Imh0dHBzOi8vd3d3LmNhaXhhLmdvdi5ici9zb2JyZS1hLWNhaXhhL3RyYWJhbGhlLW5hLWNhaXhhIiA+VHJhYmFsaGUgbmEgQ0FJWEE8L2E+PC9saT4NCjxsaT48YSBocmVmPSJodHRwczovL2NhaXhhbm90aWNpYXMuY2FpeGEuZ292LmJyLyIgdGl0bGU9Imh0dHBzOi8vY2FpeGFub3RpY2lhcy5jYWl4YS5nb3YuYnIvIiA+Q0FJWEEgTm90w61jaWFzPC9hPjwvbGk+DQo8bGkgY2xhc3M9InNlZS1tb3JlIj48YSBocmVmPSJodHRwczovL3d3dy5jYWl4YS5nb3YuYnIvc29icmUtYS1jYWl4YSIgdGl0bGU9IlR1ZG8gc29icmUgYSBDQUlYQSIgPlR1ZG8gc29icmUgYSBDQUlYQSDigLo8L2E+PC9saT4NCjwvdWw+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9saT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj0iL3BvZGVyLXB1YmxpY28vIiAgdGFiaW5kZXg9IjYiICB0aXRsZT0iUG9kZXIgUMO6YmxpY28iIGNsYXNzPSJzb2Z0Ij5Qb2RlciBQw7pibGljbzwvYT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxuYXYgY2xhc3M9Im1lbnUtaG90bGlua3MgY2xlYXJmaXggaGlkZGVuLWRlc2t0b3AiPjwhLS0gaG90bGlua3MgIGFwZW5hcyBtb2JpbGUtLT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dWw+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvYWNlc3NvLWEtaW5mb3JtYWNhby8iIHRpdGxlPSJUcmFuc3BhcsOqbmNpYSIgPlRyYW5zcGFyw6puY2lhPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvc2l0ZS9wYWdpbmFzL2Rvd25sb2Fkcy5hc3B4IiB0aXRsZT0iRG93bmxvYWRzIiA+RG93bmxvYWRzPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvc29icmUtYS1jYWl4YSIgdGl0bGU9IlNvYnJlIGEgQ0FJWEEiID5Tb2JyZSBhIENBSVhBPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC91bD4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dWwgY2xhc3M9Imxhbmd1YWdlcyI+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iL3NvYnJlLWEtY2FpeGEvcmVsYWNvZXMtY29tLWludmVzdGlkb3JlcyIgdGl0bGU9IlJJIiA+Ukk8L2E+IC8NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9Ii9zaXRlL2VuZ2xpc2gvZmluYW5jaWFsLWluZm9ybWF0aW9uL1BhZ2luYXMvZGVmYXVsdC5hc3B4IiB0aXRsZT0iRU4iID5FTjwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBjbGFzcz0iaWNvX2xpYnJhc18yMDExIiB0aXRsZT0iVHJhZHV0b3IgZGUgbGlicmFzIiA+VHJhZHV0b3IgZGUgbGlicmFzPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iL3NvYnJlLWEtY2FpeGEvZ292ZXJuYW5jYS1jb3Jwb3JhdGl2YS9pbnRlZ3JpZGFkZS8iIHRpdGxlPSJJbnRlZ3JpZGFkZSBDQUlYQSI+SW50ZWdyaWRhZGUgQ0FJWEE8L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSIvYWNlc3NvLWEtaW5mb3JtYWNhby8iIHRpdGxlPSJBY2Vzc28gw6AgaW5mb3JtYcOnw6NvIj5BY2Vzc28gw6AgaW5mb3JtYcOnw6NvPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC91bD4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvbmF2PjwhLS0gaG90bGlua3MgLS0+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvbGk+IA0KPC91bD48IS0tIGZpbSBtZW51IHByaW5jaXBhbCBtb2JpbGUgLS0+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic2VhcmNoLWJveCBub2luZGV4Ij48IS0tIHNlYXJjaC1ib3ggLS0+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJoaWRlIiBmb3I9InEiPlBlc3F1aXNhciBubyBQb3J0YWwgQ2FpeGE8L2xhYmVsPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9InRleHQiIGNsYXNzPSJzZWFyY2gtaW5wdXQiIGlkPSJxIiBuYW1lPSJxIiAgb25rZXlwcmVzcz0iZW50ZXJQcmVzcygpIiBwbGFjZWhvbGRlcj0iQnVzcXVlIG5hIENhaXhhIiBhdXRvY29tcGxldGU9Im9mZiIgLz4gICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gdHlwZT0iYnV0dG9uIiBjbGFzcz0iaXIiIG9uY2xpY2s9ImJ1c2NhclBlc3F1aXNhKCkiPjxzcGFuPkJ1c2Nhcjwvc3Bhbj48L2J1dHRvbj4gICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3VnZ2VzdC1ib3giPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVsIGNsYXNzPSJzdWdnZXN0LWxpc3Qgbm8tYnVsbGV0cyI+PC91bD4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdWdnZXN0LWFsbCI+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBocmVmPSIjIiB0aXRsZT0iIiBjbGFzcz0ic3VnZ2VzdC1hbGwtbGluayI+VmVyIHRvZG9zIG9zIHJlc3VsdGFkb3Mg4oC6PC9hPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PjwhLS0gZmltIHNlYXJjaC1ib3ggLS0+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj48IS0tIGZpbSBtYWluLW1lbnUgLS0+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImFjY291bnQgbm9pbmRleCI+PCEtLSBsb2dpbiAtLT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPCEtLSBmb3JtIGFjdGlvbj0iIyIgbWV0aG9kPSJnZXQiPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9InRleHQiIHBsYWNlaG9sZGVyPSJVc3XDoXJpbyIgbmFtZT0idXN1YXJpbyIgLz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9InRleHQiIHBsYWNlaG9sZGVyPSJTZW5oYSIgbmFtZT0ic2VuaGEiIC8+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9InN1Ym1pdCI+PHNwYW4gY2xhc3M9Imljb24iPjwvc3Bhbj4gQWNlc3NhcjwvYnV0dG9uPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9mb3JtIC0tPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBocmVmPSJodHRwczovL2ludGVybmV0YmFua2luZy5jYWl4YS5nb3YuYnIvc2luYmMvIyFuYi9sb2dpbiIgdGl0bGU9IkFjZXNzYXIgbWluaGEgY29udGEiIHRhYmluZGV4PSIxIiBpZD0iQWNlc3NvQUNvbnRhIiBuYW1lPSJBY2Vzc29BQ29udGEiIGFjY2Vzc2tleT0iNCIgY2xhc3M9ImJ0biBvcmFuZ2Ugbm9uLWZsdWlkIj48c3BhbiBjbGFzcz0iaWNvbiI+PC9zcGFuPiBBY2Vzc2FyIG1pbmhhIGNvbnRhIDwvYT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PjwhLS0gZmltIGxvZ2luIC0tPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgPCEtLSBtb2JpbGUgLS0+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtb2JpbGUtbWVudSBub2luZGV4IGhpZGRlbi1kZXNrdG9wIj4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9IiMiIHRpdGxlPSIiID5NZW51PC9hPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vYmlsZS1hY2NvdW50IG5vaW5kZXggdmlzaWJsZS1tb2JpbGUiPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9pbnRlcm5ldGJhbmtpbmcuY2FpeGEuZ292LmJyL3NpbmJjLyMhbmIvbG9naW4iIHRpdGxlPSJodHRwczovL2ludGVybmV0YmFua2luZy5jYWl4YS5nb3YuYnIvc2luYmMvIyFuYi9sb2dpbiIgPkNvbnRhPC9hPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICA8IS0tIGRpdiBjbGFzcz0ibW9iaWxlLWFjY291bnQtYWNjZXNzIHZpc2libGUtbW9iaWxlIj4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0iemV0YSI+QWNlc3NlIHN1YSBjb250YTwvcD4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxmb3JtPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJ0ZXh0IiBjbGFzcz0iZmllbGQtZCIgcGxhY2Vob2xkZXI9IlVzdcOhcmlvIiAvPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJwYXNzd29yZCIgY2xhc3M9ImZpZWxkLWQiIHBsYWNlaG9sZGVyPSJTZW5oYSIgLz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9InN1Ym1pdCIgY2xhc3M9ImJ0biBibHVlIG5vbi1mbHVpZCBidG4tYmlnIj48aSBjbGFzcz0iZm9udC1pY29uIGktbG9jayI+PC9pPiBBY2Vzc2FyPC9idXR0b24+ICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9mb3JtPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2IC0tPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgPCEtLSBmaW0gbW9iaWxlIC0tPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgIDwvbmF2PjwhLS0gbWFpbm5hdiAtLT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICA8L2Rpdj4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgPC9oZWFkZXI+PCEtLSBmaW0gaGVhZGVyIG1lbnUgLS0+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICA8L2Rpdj4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCmQYAgVIY3RsMDAkY3RsNTkkZ18xNjI5ODMyMl81NzM5XzRkMDhfYmNjN19iNGU5ZGVhNGM5M2EkTXVsdGlWaWV3U2xpZGVMb3RlcmlhDw9kAgFkBUFjdGwwMCRjdGw1OSRnXzE2Mjk4MzIyXzU3MzlfNGQwOF9iY2M3X2I0ZTlkZWE0YzkzYSRNdWx0aVZpZXdHZXJhbA8PZGZkqAGNr+5cvzcIXi5+wtxfSu6ffN4JdX3Ak971vuzIwGA=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=lPEaG-GTQiZQ3Wh_Yqo5IP8ZcfAuqiGYwDv9pbgyB7vbO13rTC5l9UYXXAPyhrSrZdGptTj3I0cTD8sO2nrkta7UY3AKKq63mwQUejTrpmw1&amp;t=635792919671809273" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+var g_wsaQoSEnabled = false;
+var g_wsaQoSDataPoints = [];
+var g_wsaLCID = 1046;
+var g_wsaListTemplateId = 850;
+var g_wsaSiteTemplateId = 'STS#0';
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002f", webAbsoluteUrl: "https:\u002f\u002fwww.caixa.gov.br", siteAbsoluteUrl: "https:\u002f\u002fwww.caixa.gov.br", serverRequestPath: "\u002fpaginas\u002fhome-caixa.aspx", layoutsUrl: "_layouts\u002f15", webTitle: "In\u00EDcio", webTemplate: "1", tenantAppVersion: "0", isAppWeb: false, Has2019Era: true, webLogoUrl: "\u002fPublishingImages\u002fCaixa.png", webLanguage: 1046, currentLanguage: 1046, currentUICultureName: "pt-BR", currentCultureName: "pt-BR", clientServerTimeDelta: new Date("2021-08-04T17:38:30.6351499Z") - new Date(), siteClientTag: "8363$$15.0.5131.1000", crossDomainPhotosEnabled:false, webUIVersion:15, webPermMasks:{High:16,Low:196673},pageListId:"{099d0dfb-b951-4f47-80fe-c62625abc9ef}",pageItemId:190, pagePersonalizationScope:1, alertsEnabled:false, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True'};var L_Menu_BaseUrl="";
+var L_Menu_LCID="1046";
+var L_Menu_SiteTheme="null";
+document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};var _spWebPartComponents = new Object();//]]>
+</script>
+
+<script src="/_layouts/15/blank.js?rev=ZaOXZEobVwykPO9g8hq%2F8A%3D%3D" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();function WebForm_OnSubmit() {
+UpdateFormDigest('\u002f', 1440000);if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;};
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BAB98CB3" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAMY7zgebrO+IffWheUMtnzXwF+qaa50E0qp2PAxPmDYOZIhxqXhHMXkVhlC9YmR7Fnyk5NLP4jFkKhLxM8DuQUobKbThtQ12ckiAxCYC+nCXg==" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm', ['tctl00$ctl59$g_16298322_5739_4d08_bcc7_b4e9dea4c93a$upAjax',''], ['ctl00$ctl59$g_16298322_5739_4d08_bcc7_b4e9dea4c93a$txtAjax','txtAjax'], [], 90, 'ctl00');
+//]]>
+</script>
+
+                        
+                        
+                        
+                        <ul id="atalhos" class="hide menu-atahos">
+                            <li>
+                                <a id="link-conteudo" href="#conteudo">Ir para conteúdo [1]
+                                
+                                
+                                
+                                
+                                
+                                </a>
+                            </li>
+                            <li>
+                                <a id="link-menuPrincipal" href="#menuPrincipal">Ir para menu principal [2]
+                                
+                                
+                                
+                                
+                                
+                                </a>
+                            </li>
+                            <li>
+                                <a id="link-busca" href="#q">Ir para a busca [3]
+                                
+                                
+                                
+                                
+                                
+                                </a>
+                            </li>
+                            <li>
+                                <a id="link-AcessoAConta" href="#AcessoAConta">Ir para Acesso a Conta [4]
+                                
+                                
+                                
+                                
+                                
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        
+                        
+                        <div>
+	<div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex"><a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">Ativar o modo mais acessível</a></div><div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex"><a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">Desativar o modo mais acessível</a></div>
+</div>
+                        
+                                
+                                <span id="DeltaSPWebPartManager">
+                                    
+                                </span>
+                                <div id="s4-workspace">
+                                    <div id="s4-bodyContainer">
+                                        <!-- wrapper -->
+                                        <div class="wrapper">
+                                            <!-- menu -->
+                                            <div>
+                                                
+                                                
+                                                
+                                                <div id="ctl00_g_d9c722bc_e878_49ba_b547_c02b56eb32b1" __MarkupType="vsattributemarkup" __WebPartId="{d9c722bc-e878-49ba-b547-c02b56eb32b1}" WebPart="true" IsClosed="false" Preview="&lt;div class=&quot;ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth &quot;>  &lt;div class=&quot;ms-webpart-chrome-title&quot; id=&quot;WebPartwpz2_g_d9c722bc_e878_49ba_b547_c02b56eb32b1_ChromeTitle&quot;>   &lt;span title=&quot;MenuSuperiorMaster - MenuSuperiorMaster&quot; id=&quot;WebPartTitlewpz2_g_d9c722bc_e878_49ba_b547_c02b56eb32b1&quot; class=&quot;js-webpart-titleCell&quot;>&lt;div class=&quot;ms-webpart-titleText&quot;>&lt;nobr>&lt;span>MenuSuperiorMaster&lt;/span>&lt;span id=&quot;WebPartCaptionwpz2_g_d9c722bc_e878_49ba_b547_c02b56eb32b1&quot;>&lt;/span>&lt;/nobr>&lt;/div>&lt;/span>  &lt;/div>&lt;div WebPartID=&quot;&quot; HasPers=&quot;true&quot; id=&quot;WebPartwpz2_g_d9c722bc_e878_49ba_b547_c02b56eb32b1&quot; width=&quot;100%&quot; class=&quot;ms-WPBody ms-WPBorder noindex ms-wpContentDivSpace &quot; OnlyForMePart=&quot;true&quot; allowMinimize=&quot;false&quot; allowRemove=&quot;false&quot; allowDelete=&quot;false&quot; allowExport=&quot;false&quot; style=&quot;&quot; >&lt;div id=&quot;WebPartContent&quot;>   &lt;div id=&quot;wpz2_g_d9c722bc_e878_49ba_b547_c02b56eb32b1&quot; WebPart=&quot;true&quot; __WebPartId=&quot;{d9c722bc-e878-49ba-b547-c02b56eb32b1}&quot; xmlns:__designer=&quot;SPD&quot; __MarkupType=&quot;vsattributemarkup&quot;>  &lt;/div>  &lt;/div>&lt;div class=&quot;ms-clear&quot;>&lt;/div>&lt;/div> &lt;/div>">
+	
+
+<script type="text/javascript">
+    function enterPress() {
+        document.getElementById('q').onkeypress = function (e) {
+        if (!e) e = window.event;
+            if (e.keyCode == '13')
+            {
+                buscarPesquisa();
+                return false;
+            }
+        }
+    }
+
+    function buscarPesquisa() {
+        //alert(document.getElementById("q").value);
+        window.location.href = "/site/Paginas/Pesquisa.aspx?k=" + document.getElementById("q").value;
+    }
+</script>
+
+<span id="ctl00_g_d9c722bc_e878_49ba_b547_c02b56eb32b1_lblErro"></span>
+        <div class="section">                                                                                                                                        
+            <header id="header-home" class="main-header"><!-- Inicio header menu -->                                                                                 
+                <div id="main-logo" tabindex="2" class="noindex">                                                                                                                                 
+                    <a href="/" title="" class="ir"><span class="title-hide-logo">Caixa Econômica Federal</span></a>                                                                                                             
+                </div>                                                                                                                                               
+                <div class="header-content noindex">                                                                                                                         
+                    <nav class="hotlinks clearfix"><!-- hotlinks -->
+                        <ul class="ainfo">
+                            <li class="integridade"><a href="/sobre-a-caixa/governanca-corporativa/integridade/" title="Integridade CAIXA">Integridade CAIXA</a></li>
+                            <li class="informacao"><a href="/acesso-a-informacao/" title="Acesso à informação">Acesso à informação</a></li>
+                        </ul>
+                        <ul class="languages">
+                            <li><a href="/sobre-a-caixa/relacoes-com-investidores" tabindex="13"  title="RI" >RI</a></li>
+                            <li><a href="/site/english/financial-information/Paginas/default.aspx" tabindex="14"  title="EN" >/EN</a></li>
+                            <li class="rybena"><a class="ico_libras_2011"  tabindex="15" title="Tradutor de libras" >Tradutor de libras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/acesso-a-informacao/" tabindex="10" title="Transparência" >Transparência</a></li>
+                            <li><a href="/site/paginas/downloads.aspx" tabindex="11" title="Downloads" >Downloads</a></li>
+                            <li><a href="/sobre-a-caixa" tabindex="12" title="Sobre a CAIXA" >Sobre a CAIXA</a></li>
+                        </ul>
+<ul id="top-left-menu" class="menu-header-index">
+<li><span class="divisor"></span><a href="/voce/" tabindex="7"title=" Você "><strong> Você </strong></a><span class="divisor"></span></li>
+<li><a href="/empresa"tabindex="8" title=" Empresa "><strong> Empresa </strong></a><span class="divisor"></span></li>
+<li><a href="/investimentos"tabindex="9" title="Investimentos"><strong>Investimentos</strong></a><span class="divisor"></span></li>
+<li><a href="/openbanking"tabindex="10" title="Open Banking"><strong>Open Banking</strong></a><span class="divisor"></span></li>
+</ul>
+                    </nav><!-- hotlinks -->
+                    <nav id="main-nav" class="clearfix"><!-- mainnav -->                                                                                             
+                        <div class="main-menu noindex"><!-- main-menu -->
+                            <a name="menuPrincipal" id="menuPrincipal" class="hide" accesskey="2">Menu Principal</a>
+<ul id="menu-principal"><!-- Menu principal -->
+<li class="has-submenu">
+<a href="#" tabindex="3" title="Produtos" >Produtos</a>
+<div class="submenu submenu-produtos clearfix"><!-- Sub Menu -->
+   <div class="submenu-column">
+      <p class="submenu-title">Para Você </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/pix/Paginas/default.aspx" title="https://www.caixa.gov.br/pix/Paginas/default.aspx" >Pix para Você</a></li>
+<li><a href="https://www.caixa.gov.br/voce/contas" title="https://www.caixa.gov.br/voce/contas" >Contas</a></li>
+<li><a href="https://www.caixa.gov.br/voce/habitacao/Paginas/default.aspx" title="https://www.caixa.gov.br/voce/habitacao/Paginas/default.aspx" >Habitação</a></li>
+<li><a href="https://www.caixa.gov.br/voce/cartoes" title="https://www.caixa.gov.br/voce/cartoes" >Cartões</a></li>
+<li><a href="https://www.caixa.gov.br/voce/negociacao/Paginas/default.aspx" title="https://www.caixa.gov.br/voce/negociacao/Paginas/default.aspx" >Negocie sua dívida</a></li>
+<li><a href="https://www.caixa.gov.br/voce/poupanca-e-investimentos" title="https://www.caixa.gov.br/voce/poupanca-e-investimentos" >Investimentos</a></li>
+<li><a href="https://www.caixa.gov.br/voce/poupanca-e-investimentos/poupanca/Paginas/default.aspx" title="https://www.caixa.gov.br/voce/poupanca-e-investimentos/poupanca/Paginas/default.aspx" >Poupança</a></li>
+<li><a href="https://www.caixa.gov.br/voce/Seguros" title="https://www.caixa.gov.br/voce/Seguros" >Seguros</a></li>
+<li><a href="https://www.caixa.gov.br/voce/promocoes" title="https://www.caixa.gov.br/voce/promocoes" >Promoções</a></li>
+<li><a href="http://loterias.caixa.gov.br/" title="http://loterias.caixa.gov.br/" >Loterias</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/credito-financiamento/credito-rural" title="https://www.caixa.gov.br/empresa/credito-financiamento/credito-rural" >Crédito Rural</a></li>
+<li><a href="https://www.caixa.gov.br/voce/credito-financiamento" title="https://www.caixa.gov.br/voce/credito-financiamento" >Empréstimo e Financiamento</a></li>
+<li><a href="https://www.caixa.gov.br/voce/caminhoneiros/Paginas/default.aspx" title="https://www.caixa.gov.br/voce/caminhoneiros/Paginas/default.aspx" >Caminhoneiro</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/voce" title="Todos os produtos para você" >Todos os produtos para você ›</a></li>
+</ul>
+</div>
+   <div class="submenu-column">
+      <p class="submenu-title">Empresa </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/pix/para-sua-empresa/Paginas/default.aspx" title="https://www.caixa.gov.br/pix/para-sua-empresa/Paginas/default.aspx" >Pix para sua Empresa</a></li>
+<li><a href="https://www.caixa.gov.br/voce/negociacao/Paginas/default.aspx#empresa" title="https://www.caixa.gov.br/voce/negociacao/Paginas/default.aspx#empresa" >Negocie a dívida da sua Empresa</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/cartoes" title="https://www.caixa.gov.br/empresa/cartoes" >Cartões</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/credito-financiamento" title="https://www.caixa.gov.br/empresa/credito-financiamento" >Crédito e Financiamento</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/credito-financiamento/imoveis" title="https://www.caixa.gov.br/empresa/credito-financiamento/imoveis" >Imóveis</a></li>
+<li><a href="https://www.caixa.gov.br/poder-publico/modernizacao-gestao/servicos-caixa/servicos-judiciarios" title="https://www.caixa.gov.br/poder-publico/modernizacao-gestao/servicos-caixa/servicos-judiciarios" >Serviços para o Judiciário</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/credito-financiamento/credito-rural" title="https://www.caixa.gov.br/empresa/credito-financiamento/credito-rural" >Crédito Rural</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/conectividade-social" title="https://www.caixa.gov.br/empresa/conectividade-social" >Conectividade Social</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/fgts-empresas" title="https://www.caixa.gov.br/empresa/fgts-empresas" >FGTS</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/instituicoes-ensino-fies/Paginas/default.aspx" title="https://www.caixa.gov.br/empresa/instituicoes-ensino-fies/Paginas/default.aspx" >FIES</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/contas" title="https://www.caixa.gov.br/empresa/contas" >Contas</a></li>
+<li><a href="https://www.caixa.gov.br/fundos-investimento/empresa/poupanca-e-investimentos" title="https://www.caixa.gov.br/fundos-investimento/empresa/poupanca-e-investimentos" >Investimentos</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/empresa" title="Todos os produtos para empresas" >Todos os produtos para empresas ›</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="has-submenu">
+<a href="#" tabindex="4" title="Benefícios e Programas" >Benefícios e Programas</a>
+<div class="submenu submenu-beneficios clearfix"><!-- Sub Menu -->
+   <div class="submenu-column">
+      <p class="submenu-title">Benefícios do trabalhador </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/beneficios-trabalhador/fgts" title="https://www.caixa.gov.br/beneficios-trabalhador/fgts" >FGTS</a></li>
+<li><a href="https://www.caixa.gov.br/beneficios-trabalhador/abono-salarial" title="https://www.caixa.gov.br/beneficios-trabalhador/abono-salarial" >Abono Salarial</a></li>
+<li><a href="https://www.caixa.gov.br/beneficios-trabalhador/inss" title="https://www.caixa.gov.br/beneficios-trabalhador/inss" >INSS</a></li>
+<li><a href="https://www.caixa.gov.br/beneficios-trabalhador/seguro-desemprego" title="https://www.caixa.gov.br/beneficios-trabalhador/seguro-desemprego" >Seguro-Desemprego</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/beneficios-trabalhador" title="Tudo sobre os benefícios do trabalhador" >Tudo sobre os benefícios do trabalhador ›</a></li>
+</ul>
+</div>
+   <div class="submenu-column">
+      <p class="submenu-title">Programas sociais </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/voce/habitacao/casa-verde-e-amarela/Paginas/default.aspx" title="https://www.caixa.gov.br/voce/habitacao/casa-verde-e-amarela/Paginas/default.aspx" >Casa Verde e Amarela</a></li>
+<li><a href="https://www.caixa.gov.br/voce/habitacao/minha-casa-minha-vida" title="https://www.caixa.gov.br/voce/habitacao/minha-casa-minha-vida" >Minha Casa Minha Vida</a></li>
+<li><a href="https://www.caixa.gov.br/programas-sociais/bolsa-familia" title="https://www.caixa.gov.br/programas-sociais/bolsa-familia" >Bolsa Família</a></li>
+<li><a href="https://www.caixa.gov.br/programas-sociais/fies" title="https://www.caixa.gov.br/programas-sociais/fies" >FIES</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/programas-sociais" title="Todos os programas" >Todos os programas ›</a></li>
+</ul>
+</div>
+   <div class="submenu-column">
+      <p class="submenu-title">Cadastros e Serviços </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/servicos/cartao-cidadao" title="https://www.caixa.gov.br/servicos/cartao-cidadao" >Cartão do Cidadão</a></li>
+<li><a href="https://www.caixa.gov.br/servicos/cpf" title="https://www.caixa.gov.br/servicos/cpf" >CPF</a></li>
+<li><a href="https://www.caixa.gov.br/servicos/cadastro-unico" title="https://www.caixa.gov.br/servicos/cadastro-unico" >Cadastro Único</a></li>
+<li><a href="https://www.caixa.gov.br/servicos/nis" title="https://www.caixa.gov.br/servicos/nis" >Cadastro NIS </a></li>
+<li><a href="https://www.caixa.gov.br/servicos/dpvat/Paginas/default.aspx" title="https://www.caixa.gov.br/servicos/dpvat/Paginas/default.aspx" >DPVAT</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/servicos" title="Todos os serviços" >Todos os serviços ›</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="has-submenu">
+<a href="#" tabindex="5" title="Atendimento" >Atendimento</a>
+<div class="submenu submenu-atendimento clearfix"><!-- Sub Menu -->
+   <div class="submenu-column">
+      <p class="submenu-title">Canais </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx" title="https://www.caixa.gov.br/atendimento/Paginas/default.aspx" >Atendimento para você e para empresa</a></li>
+<li><a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#telefones-caixa" title="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#telefones-caixa" >Telefones</a></li>
+<li><a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#encontre" title="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#encontre" >Endereços</a></li>
+<li><a href="http://fale-conosco.caixa.gov.br/" title="http://fale-conosco.caixa.gov.br/" >Fale Conosco</a></li>
+<li><a href="https://www.caixa.gov.br/atendimento/canal-denuncia/Paginas/default.aspx" title="https://www.caixa.gov.br/atendimento/canal-denuncia/Paginas/default.aspx" >Canal de Denúncia</a></li>
+<li><a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#servicos-limites-canal" title="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#servicos-limites-canal" >Serviços e limites por canal</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx" title="Tudo sobre atendimento" >Tudo sobre atendimento ›</a></li>
+</ul>
+</div>
+   <div class="submenu-column">
+      <p class="submenu-title">Canais Digitais </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/atendimento/aplicativos" title="https://www.caixa.gov.br/atendimento/aplicativos" >Aplicativos</a></li>
+<li><a href="https://www.caixa.gov.br/site/Paginas/downloads.aspx" title="https://www.caixa.gov.br/site/Paginas/downloads.aspx" >Downloads</a></li>
+<li><a href="https://www.caixa.gov.br/atendimento/2-via-boleto" title="https://www.caixa.gov.br/atendimento/2-via-boleto" >2ª via de boletos</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/atendimento/canais-digitais/Paginas/default.aspx?pk_campaign=canaisset15&pk_kwd=link_menu" title="Todos os serviços e canais digitais" >Todos os serviços e canais digitais ›</a></li>
+</ul>
+</div>
+   <div class="submenu-column">
+      <p class="submenu-title">Institucional </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/sustentabilidade/investimentos-socioambientais/agencia-barco/Paginas/default.aspx" title="https://www.caixa.gov.br/sustentabilidade/investimentos-socioambientais/agencia-barco/Paginas/default.aspx" >Agência-Barco</a></li>
+<li><a href="https://www.caixa.gov.br/sustentabilidade/Paginas/default.aspx" title="https://www.caixa.gov.br/sustentabilidade/Paginas/default.aspx" >Sustentabilidade</a></li>
+<li><a href="https://www.caixa.gov.br/sobre-a-caixa/trabalhe-na-caixa" title="https://www.caixa.gov.br/sobre-a-caixa/trabalhe-na-caixa" >Trabalhe na CAIXA</a></li>
+<li><a href="https://caixanoticias.caixa.gov.br/" title="https://caixanoticias.caixa.gov.br/" >CAIXA Notícias</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/sobre-a-caixa" title="Tudo sobre a CAIXA" >Tudo sobre a CAIXA ›</a></li>
+</ul>
+</div>
+</div>
+</li>
+                                <li>
+                                    <a href="/poder-publico/"  tabindex="6"  title="Poder Público" class="soft">Poder Público</a>
+                                </li> 
+</ul><!-- fim menu principal -->
+<ul id="menu-principal-mobile" class="hidden-desktop"><!-- Menu principal mobile-->
+<li class="has-submenu">
+<a href="#" tabindex="3" title="Para Você" >Para Você</a>
+<div class="submenu submenu-produtos clearfix"><!-- Sub Menu -->
+   <div class="submenu-column">
+<ul>
+<li><a href="https://www.caixa.gov.br/pix/Paginas/default.aspx" title="https://www.caixa.gov.br/pix/Paginas/default.aspx" >Pix para Você</a></li>
+<li><a href="https://www.caixa.gov.br/voce/contas" title="https://www.caixa.gov.br/voce/contas" >Contas</a></li>
+<li><a href="https://www.caixa.gov.br/voce/habitacao/Paginas/default.aspx" title="https://www.caixa.gov.br/voce/habitacao/Paginas/default.aspx" >Habitação</a></li>
+<li><a href="https://www.caixa.gov.br/voce/cartoes" title="https://www.caixa.gov.br/voce/cartoes" >Cartões</a></li>
+<li><a href="https://www.caixa.gov.br/voce/negociacao/Paginas/default.aspx" title="https://www.caixa.gov.br/voce/negociacao/Paginas/default.aspx" >Negocie sua dívida</a></li>
+<li><a href="https://www.caixa.gov.br/voce/poupanca-e-investimentos" title="https://www.caixa.gov.br/voce/poupanca-e-investimentos" >Investimentos</a></li>
+<li><a href="https://www.caixa.gov.br/voce/poupanca-e-investimentos/poupanca/Paginas/default.aspx" title="https://www.caixa.gov.br/voce/poupanca-e-investimentos/poupanca/Paginas/default.aspx" >Poupança</a></li>
+<li><a href="https://www.caixa.gov.br/voce/Seguros" title="https://www.caixa.gov.br/voce/Seguros" >Seguros</a></li>
+<li><a href="https://www.caixa.gov.br/voce/promocoes" title="https://www.caixa.gov.br/voce/promocoes" >Promoções</a></li>
+<li><a href="http://loterias.caixa.gov.br/" title="http://loterias.caixa.gov.br/" >Loterias</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/credito-financiamento/credito-rural" title="https://www.caixa.gov.br/empresa/credito-financiamento/credito-rural" >Crédito Rural</a></li>
+<li><a href="https://www.caixa.gov.br/voce/credito-financiamento" title="https://www.caixa.gov.br/voce/credito-financiamento" >Empréstimo e Financiamento</a></li>
+<li><a href="https://www.caixa.gov.br/voce/caminhoneiros/Paginas/default.aspx" title="https://www.caixa.gov.br/voce/caminhoneiros/Paginas/default.aspx" >Caminhoneiro</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/voce" title="Todos os produtos para você" >Todos os produtos para você ›</a></li>
+</ul>
+   </div>
+</div>
+</li>
+<li class="has-submenu">
+<a href="#" tabindex="4" title="Empresa" >Empresa</a>
+<div class="submenu submenu-beneficios clearfix"><!-- Sub Menu -->
+   <div class="submenu-column">
+<ul>
+<li><a href="https://www.caixa.gov.br/pix/para-sua-empresa/Paginas/default.aspx" title="https://www.caixa.gov.br/pix/para-sua-empresa/Paginas/default.aspx" >Pix para sua Empresa</a></li>
+<li><a href="https://www.caixa.gov.br/voce/negociacao/Paginas/default.aspx#empresa" title="https://www.caixa.gov.br/voce/negociacao/Paginas/default.aspx#empresa" >Negocie a dívida da sua Empresa</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/cartoes" title="https://www.caixa.gov.br/empresa/cartoes" >Cartões</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/credito-financiamento" title="https://www.caixa.gov.br/empresa/credito-financiamento" >Crédito e Financiamento</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/credito-financiamento/imoveis" title="https://www.caixa.gov.br/empresa/credito-financiamento/imoveis" >Imóveis</a></li>
+<li><a href="https://www.caixa.gov.br/poder-publico/modernizacao-gestao/servicos-caixa/servicos-judiciarios" title="https://www.caixa.gov.br/poder-publico/modernizacao-gestao/servicos-caixa/servicos-judiciarios" >Serviços para o Judiciário</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/credito-financiamento/credito-rural" title="https://www.caixa.gov.br/empresa/credito-financiamento/credito-rural" >Crédito Rural</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/conectividade-social" title="https://www.caixa.gov.br/empresa/conectividade-social" >Conectividade Social</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/fgts-empresas" title="https://www.caixa.gov.br/empresa/fgts-empresas" >FGTS</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/instituicoes-ensino-fies/Paginas/default.aspx" title="https://www.caixa.gov.br/empresa/instituicoes-ensino-fies/Paginas/default.aspx" >FIES</a></li>
+<li><a href="https://www.caixa.gov.br/empresa/contas" title="https://www.caixa.gov.br/empresa/contas" >Contas</a></li>
+<li><a href="https://www.caixa.gov.br/fundos-investimento/empresa/poupanca-e-investimentos" title="https://www.caixa.gov.br/fundos-investimento/empresa/poupanca-e-investimentos" >Investimentos</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/empresa" title="Todos os produtos para empresas" >Todos os produtos para empresas ›</a></li>
+</ul>
+   </div>
+</div>
+</li>
+<li class="has-submenu">
+<a href="#" tabindex="5" title="Benefícios e Programas" >Benefícios e Programas</a>
+<div class="submenu submenu-atendimento clearfix"><!-- Sub Menu -->
+   <div class="submenu-column">
+      <p class="submenu-title">Benefícios do trabalhador </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/beneficios-trabalhador/fgts" title="https://www.caixa.gov.br/beneficios-trabalhador/fgts" >FGTS</a></li>
+<li><a href="https://www.caixa.gov.br/beneficios-trabalhador/abono-salarial" title="https://www.caixa.gov.br/beneficios-trabalhador/abono-salarial" >Abono Salarial</a></li>
+<li><a href="https://www.caixa.gov.br/beneficios-trabalhador/inss" title="https://www.caixa.gov.br/beneficios-trabalhador/inss" >INSS</a></li>
+<li><a href="https://www.caixa.gov.br/beneficios-trabalhador/seguro-desemprego" title="https://www.caixa.gov.br/beneficios-trabalhador/seguro-desemprego" >Seguro-Desemprego</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/beneficios-trabalhador" title="Tudo sobre os benefícios do trabalhador" >Tudo sobre os benefícios do trabalhador ›</a></li>
+</ul>
+</div>
+   <div class="submenu-column">
+      <p class="submenu-title">Programas sociais </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/voce/habitacao/casa-verde-e-amarela/Paginas/default.aspx" title="https://www.caixa.gov.br/voce/habitacao/casa-verde-e-amarela/Paginas/default.aspx" >Casa Verde e Amarela</a></li>
+<li><a href="https://www.caixa.gov.br/voce/habitacao/minha-casa-minha-vida" title="https://www.caixa.gov.br/voce/habitacao/minha-casa-minha-vida" >Minha Casa Minha Vida</a></li>
+<li><a href="https://www.caixa.gov.br/programas-sociais/bolsa-familia" title="https://www.caixa.gov.br/programas-sociais/bolsa-familia" >Bolsa Família</a></li>
+<li><a href="https://www.caixa.gov.br/programas-sociais/fies" title="https://www.caixa.gov.br/programas-sociais/fies" >FIES</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/programas-sociais" title="Todos os programas" >Todos os programas ›</a></li>
+</ul>
+</div>
+   <div class="submenu-column">
+      <p class="submenu-title">Cadastros e Serviços </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/servicos/cartao-cidadao" title="https://www.caixa.gov.br/servicos/cartao-cidadao" >Cartão do Cidadão</a></li>
+<li><a href="https://www.caixa.gov.br/servicos/cpf" title="https://www.caixa.gov.br/servicos/cpf" >CPF</a></li>
+<li><a href="https://www.caixa.gov.br/servicos/cadastro-unico" title="https://www.caixa.gov.br/servicos/cadastro-unico" >Cadastro Único</a></li>
+<li><a href="https://www.caixa.gov.br/servicos/nis" title="https://www.caixa.gov.br/servicos/nis" >Cadastro NIS </a></li>
+<li><a href="https://www.caixa.gov.br/servicos/dpvat/Paginas/default.aspx" title="https://www.caixa.gov.br/servicos/dpvat/Paginas/default.aspx" >DPVAT</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/servicos" title="Todos os serviços" >Todos os serviços ›</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="has-submenu">
+<a href="#" tabindex="6" title="Atendimento" >Atendimento</a>
+<div class="submenu submenu-produtos clearfix"><!-- Sub Menu -->
+   <div class="submenu-column">
+      <p class="submenu-title">Canais </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx" title="https://www.caixa.gov.br/atendimento/Paginas/default.aspx" >Atendimento para você e para empresa</a></li>
+<li><a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#telefones-caixa" title="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#telefones-caixa" >Telefones</a></li>
+<li><a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#encontre" title="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#encontre" >Endereços</a></li>
+<li><a href="http://fale-conosco.caixa.gov.br/" title="http://fale-conosco.caixa.gov.br/" >Fale Conosco</a></li>
+<li><a href="https://www.caixa.gov.br/atendimento/canal-denuncia/Paginas/default.aspx" title="https://www.caixa.gov.br/atendimento/canal-denuncia/Paginas/default.aspx" >Canal de Denúncia</a></li>
+<li><a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#servicos-limites-canal" title="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#servicos-limites-canal" >Serviços e limites por canal</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx" title="Tudo sobre atendimento" >Tudo sobre atendimento ›</a></li>
+</ul>
+</div>
+   <div class="submenu-column">
+      <p class="submenu-title">Canais Digitais </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/atendimento/aplicativos" title="https://www.caixa.gov.br/atendimento/aplicativos" >Aplicativos</a></li>
+<li><a href="https://www.caixa.gov.br/site/Paginas/downloads.aspx" title="https://www.caixa.gov.br/site/Paginas/downloads.aspx" >Downloads</a></li>
+<li><a href="https://www.caixa.gov.br/atendimento/2-via-boleto" title="https://www.caixa.gov.br/atendimento/2-via-boleto" >2ª via de boletos</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/atendimento/canais-digitais/Paginas/default.aspx?pk_campaign=canaisset15&pk_kwd=link_menu" title="Todos os serviços e canais digitais" >Todos os serviços e canais digitais ›</a></li>
+</ul>
+</div>
+   <div class="submenu-column">
+      <p class="submenu-title">Institucional </p>
+<ul>
+<li><a href="https://www.caixa.gov.br/sustentabilidade/investimentos-socioambientais/agencia-barco/Paginas/default.aspx" title="https://www.caixa.gov.br/sustentabilidade/investimentos-socioambientais/agencia-barco/Paginas/default.aspx" >Agência-Barco</a></li>
+<li><a href="https://www.caixa.gov.br/sustentabilidade/Paginas/default.aspx" title="https://www.caixa.gov.br/sustentabilidade/Paginas/default.aspx" >Sustentabilidade</a></li>
+<li><a href="https://www.caixa.gov.br/sobre-a-caixa/trabalhe-na-caixa" title="https://www.caixa.gov.br/sobre-a-caixa/trabalhe-na-caixa" >Trabalhe na CAIXA</a></li>
+<li><a href="https://caixanoticias.caixa.gov.br/" title="https://caixanoticias.caixa.gov.br/" >CAIXA Notícias</a></li>
+<li class="see-more"><a href="https://www.caixa.gov.br/sobre-a-caixa" title="Tudo sobre a CAIXA" >Tudo sobre a CAIXA ›</a></li>
+</ul>
+</div>
+</div>
+</li>
+                                <li>
+                                    <a href="/poder-publico/"  tabindex="6"  title="Poder Público" class="soft">Poder Público</a>
+                                    <nav class="menu-hotlinks clearfix hidden-desktop"><!-- hotlinks  apenas mobile-->
+                                        <ul>
+                                            <li><a href="/acesso-a-informacao/" title="Transparência" >Transparência</a></li>
+                                            <li><a href="/site/paginas/downloads.aspx" title="Downloads" >Downloads</a></li>
+                                            <li><a href="/sobre-a-caixa" title="Sobre a CAIXA" >Sobre a CAIXA</a></li>
+                                        </ul>                                                                                                                        
+                                        <ul class="languages">                                                                                                       
+                                            <li><a href="/sobre-a-caixa/relacoes-com-investidores" title="RI" >RI</a> /
+                                                <a href="/site/english/financial-information/Paginas/default.aspx" title="EN" >EN</a></li>
+                                                    <li><a class="ico_libras_2011" title="Tradutor de libras" >Tradutor de libras</a></li>
+                                                <li><a href="/sobre-a-caixa/governanca-corporativa/integridade/" title="Integridade CAIXA">Integridade CAIXA</a></li>
+                                                <li><a href="/acesso-a-informacao/" title="Acesso à informação">Acesso à informação</a></li>
+                                        </ul>
+                                    </nav><!-- hotlinks -->
+                                </li> 
+</ul><!-- fim menu principal mobile -->
+                            <div class="search-box noindex"><!-- search-box -->                                                                                              
+                                    <label class="hide" for="q">Pesquisar no Portal Caixa</label>
+                                    <input type="text" class="search-input" id="q" name="q"  onkeypress="enterPress()" placeholder="Busque na Caixa" autocomplete="off" />                      
+                                      <button type="button" class="ir" onclick="buscarPesquisa()"><span>Buscar</span></button>   
+                                <div class="suggest-box">                                                                                                            
+                                    <ul class="suggest-list no-bullets"></ul>                                                                                        
+                                    <div class="suggest-all">                                                                                                        
+                                        <a href="#" title="" class="suggest-all-link">Ver todos os resultados ›</a>                                                  
+                                    </div>                                                                                                                           
+                                </div>                                                                                                                               
+                            </div><!-- fim search-box -->                                                                                                            
+                        </div><!-- fim main-menu -->                                                                                                                 
+                        <div class="account noindex"><!-- login -->                                                                                                          
+                            <!-- form action="#" method="get">                                                                                                       
+                                <input type="text" placeholder="Usuário" name="usuario" />                                                                           
+                                <input type="text" placeholder="Senha" name="senha" />                                                                               
+                                <button type="submit"><span class="icon"></span> Acessar</button>                                                                    
+                            </form -->                                                                                                                               
+                            <a href="https://internetbanking.caixa.gov.br/sinbc/#!nb/login" title="Acessar minha conta" tabindex="1" id="AcessoAConta" name="AcessoAConta" accesskey="4" class="btn orange non-fluid"><span class="icon"></span> Acessar minha conta </a>                                          
+                        </div><!-- fim login -->                                                                                                                     
+                        <!-- mobile -->
+                        <div class="mobile-menu noindex hidden-desktop">                                                                                                     
+                            <a href="#" title="" >Menu</a>                                                                                                           
+                        </div>
+                        <div class="mobile-account noindex visible-mobile">                                                                                               
+                            <a href="https://internetbanking.caixa.gov.br/sinbc/#!nb/login" title="https://internetbanking.caixa.gov.br/sinbc/#!nb/login" >Conta</a>
+                        </div>
+                        <!-- div class="mobile-account-access visible-mobile">                                                                                       
+                            <p class="zeta">Acesse sua conta</p>                                                                                                     
+                            <form>                                                                                                                                   
+                                <input type="text" class="field-d" placeholder="Usuário" />                                                                          
+                                <input type="password" class="field-d" placeholder="Senha" />                                                                        
+                                                                                                                                                                     
+                                <button type="submit" class="btn blue non-fluid btn-big"><i class="font-icon i-lock"></i> Acessar</button>                           
+                            </form>                                                                                                                                  
+                        </div -->                                                                                                                                    
+                        <!-- fim mobile -->                                                                                                                          
+                    </nav><!-- mainnav -->                                                                                                                           
+                </div>                                                                                                                                               
+            </header><!-- fim header menu -->                                                                                                                        
+      </div>                                                                                                                                                         
+
+
+</div>
+                                                
+                                            </div>
+                                            <!-- menu -->
+                                            <!-- ******************************************************** Conteúdo ******************************************************************* -->
+                                            <div id="”pagebody”">
+                                                <a name="conteudo" id="conteudo" class="hide" accesskey="1">Início do Conteúdo
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                                <div data-name="ContentPlaceHolderMain">
+                                                    
+                                                    
+                                                    <span id="DeltaPlaceHolderMain">
+                                                        
+
+<div class="ms-webpart-zone ms-fullWidth">
+	<div id="MSOZoneCell_WebPartctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div class="ms-webpart-chrome-title" id="WebPartctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a_ChromeTitle">
+				<span title="WP_Home  - WP_Home" id="WebPartTitlectl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a" class="js-webpart-titleCell"><h2 style="text-align:justify;" class="ms-webpart-titleText"><nobr><span>WP_Home </span><span id="WebPartCaptionctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a"></span></nobr></h2></span>
+			</div><div WebPartID="16298322-5739-4d08-bcc7-b4e9dea4c93a" HasPers="false" id="WebPartctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a" width="100%" class="ms-WPBody ms-WPBorder noindex ms-wpContentDivSpace " allowDelete="false" allowExport="false" style="" ><div id="ctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a">
+				
+<script type="text/javascript">
+    function removeLoterias() {
+        $('.modelo-sim .colsm-9').remove();
+        $('.modelo-sim .colsm-3').remove();
+        $('.loterias').appendTo('.modelo-sim');
+    }
+
+    function loadItem(item) {
+        seq = item.split(",")[2];
+        var itemClick = ".item" + seq;
+
+        if (!($(itemClick).hasClass("carregado")) && item.split(",")[0] != "DESTAQUES" && item.split(",")[0] != "LOTERIAS CAIXA") {
+            $(".txtAjax").val(item).trigger("change");
+        }
+        else if (item.split(",")[0] == "LOTERIAS CAIXA") {
+            $('#itemQuatro').removeClass('loadAjax');
+            $('#itemQuatro .carousel').trigger('click');
+        }
+
+    }
+
+
+    function remove(p) {
+
+        var item = '#' + p;
+        var addItem = '.add' + p;
+
+        $(addItem + ' > div').remove(); // remover conteudo do slide ao clicar no slide.
+
+        $('.remove').appendTo(addItem); // inserindo o ajax no slide.
+
+        $(addItem + ' .remove').removeClass('remove'); // removendo a classe .remove após o ajax ser inserido no slide
+
+        $('.remove').remove(); // removendo o ajax carregado.
+
+        $('#content-menu .' + p).addClass("carregado");
+
+        $(item + ' .carousel').trigger('click');
+
+        $(item).removeClass('loadAjax');
+
+    }
+
+
+
+
+</script>
+
+
+<div class="content-wrapper row">
+    
+    <span id="ctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a_Label1">Ocorreu um erro inesperado.</span>
+    <h1 class="title-hide">Caixa</h1>
+    <!-- box slider -->
+    <div id="content-menu" class="hidden-mobile menu-slider">
+        <!-- menu slider v1.1-->
+        <ul>
+            
+                    <li class="menu-item itemUm">
+                        <a href="#itemUm" onclick="javascript:loadItem('DESTAQUES,1,Um');" title="DESTAQUES">
+                            <img src="https://www.caixa.gov.br/PublishingImages/01_Destaques.png" alt="DESTAQUES" />DESTAQUES
+                        </a>
+                    </li>
+                
+                    <li class="menu-item itemDois">
+                        <a href="#itemDois" onclick="javascript:loadItem('PARA TRABALHADORES,2,Dois');" title="PARA TRABALHADORES">
+                            <img src="https://www.caixa.gov.br/PublishingImages/02_Trabalhadores.png" alt="PARA TRABALHADORES" />PARA TRABALHADORES
+                        </a>
+                    </li>
+                
+                    <li class="menu-item itemTres">
+                        <a href="#itemTres" onclick="javascript:loadItem('PROGRAMAS SOCIAIS,3,Tres');" title="PROGRAMAS SOCIAIS">
+                            <img src="https://www.caixa.gov.br/PublishingImages/03_ProgramasSociais.png" alt="PROGRAMAS SOCIAIS" />PROGRAMAS SOCIAIS
+                        </a>
+                    </li>
+                
+                    <li class="menu-item itemQuatro">
+                        <a href="#itemQuatro" onclick="javascript:loadItem('LOTERIAS CAIXA,4,Quatro');" title="LOTERIAS CAIXA">
+                            <img src="https://www.caixa.gov.br/PublishingImages/04_Loterias.png" alt="LOTERIAS CAIXA" />LOTERIAS CAIXA
+                        </a>
+                    </li>
+                
+                    <li class="menu-item itemCinco">
+                        <a href="#itemCinco" onclick="javascript:loadItem('HABITAÇÃO,5,Cinco');" title="HABITAÇÃO">
+                            <img src="https://www.caixa.gov.br/PublishingImages/05_Habitacao.png" alt="HABITAÇÃO" />HABITAÇÃO
+                        </a>
+                    </li>
+                
+        </ul>
+    </div>
+    <div id="content">
+        
+        
+                <section id='itemUm' class="content-section itemUm">
+                    <a class="content-item visible-mobile" href="#itemUm" onclick="javascript:loadItem('DESTAQUES,1,Um');">
+                        <img src="https://www.caixa.gov.br/PublishingImages/01_Destaques.png" alt="DESTAQUES"/>
+                        DESTAQUES
+                        <!-- icone -->
+                    </a>
+                    <!-- menu mobile -->
+                    <article>
+                        <!-- conteúdo slider -------------------->
+                        <div class="row  slide-row modelo-">
+                            <a href="#" class="carousel hide" data-slide="Um">DESTAQUES</a>
+                            <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                            <div class="article-content colsm-9">
+                                <!-- article-content -->
+                                <!-- carrossel observar o tipo --------------------------------------------------------------------------------------------------------->
+                                <div class="additemUm">
+                                    <div class="carrossel carrossel-slide-01">
+                                        
+                                                <div class="item item-carrossel slide-modelo-05">
+                                                    <span class="bg-home" style="background-image: url(/PublishingImages/home/AE-Parcela-4-bg.jpg)">/PublishingImages/home/AE-Parcela-4-bg.jpg</span>
+                                                    <!-- item-carrossel -------------------->
+                                                    <h2 class="giga">A 4ª Parcela do Auxílio <br> Emergencial 2021 <br>foi antecipada</h2>
+                                                    <img src='https://www.caixa.gov.br/PublishingImages/home/AE-Parcela-4-elemento-v2.png' class="article-illustration" alt="A 4ª Parcela do Auxílio <br> Emergencial 2021 <br>foi antecipada" />
+                                                    <div class="article-actions row">
+                                                        <p class="description">Veja o calendário e saiba quando você vai receber. Use o CAIXA Tem e aproveite um banco inteiro no seu celular.</p>
+                                                        <p class="action">
+                                                            <a href="https://auxilio.caixa.gov.br/#/inicio" title="" class="home-button orange">Saiba mais <span>▶</span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            
+                                        
+                                    </div>
+
+                                </div>
+                                <!-- carrossel fim -------------------->
+                                <!-- navegação slides - fixo - colocar o numero de acordo com o carrossel  ----------------------->
+                                <a id='slide-p-0' class="slider-nav slider-prev" title="Slider anterior">Anterior</a>
+                                <a id='slide-n-0' class="slider-nav slider-next" title="Próximo slider">Próximo</a>
+                                <!-- navegação slides - fixo ----------------------->
+                                <!-- carrossel ----------------------------------------------------------------------------------------------------------------------->
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- article-content -------------------->
+                            <div class="related-itens clearfix colsm-3">
+                                <h2>Mais destaques </h2>
+                                <ul>
+                                    
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/caixacomsuaempresa/Paginas/default.aspx">
+                                                    <span class="home-related-title">CAIXA + Empresas</span>
+                                                    <span class="home-related-desc milli">Soluções de crédito para sua empresa com as menores taxas, carência para começar a pagar e parcelamento em até 60 meses. </span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/sobre-a-caixa/trabalhe-na-caixa/Paginas/default.aspx">
+                                                    <span class="home-related-title">Trabalhe na CAIXA</span>
+                                                    <span class="home-related-desc milli">Você tem interesse em trabalhar na CAIXA? Saiba como.</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/voce/negociacao/Paginas/default.aspx">
+                                                    <span class="home-related-title">Negocie suas dívidas</span>
+                                                    <span class="home-related-desc milli">Se você está com dificuldade de pagamento de seu empréstimo, cartão de crédito ou financiamento habitacional, regularize suas dívidas agora mesmo. A CAIXA sempre tem uma solução que cabe no seu bolso.</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/faleconosco">
+                                                    <span class="home-related-title">Fale Conosco</span>
+                                                    <span class="home-related-desc milli"><span class="home-related-desc milli"></span>
+<a target="_blank" href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#telefones-caixa">Atendimento CAIXA - 0800 104 0104</a> 
+<a href="https://www.caixa.gov.br/atendimento/Paginas/default.aspx#telefones-caixa">CAIXA Cidadão - 0800 726 0207</a>
+<a target="_blank" href="https://cefwebchat.chatbsservices.com.br/index.html">Negociação de Dívidas via chat</a>
+<a href="/faleconosco?utm_source=site_caixa&utm_medium=maisdestaques&utm_campaign=ouvidoria&utm_content=saccaixa">SAC CAIXA - 0800 726 0101</a>
+<a href="/faleconosco?utm_source=site_caixa&utm_medium=maisdestaques&utm_campaign=ouvidoria&utm_content=ouvidoriacaixa">Ouvidoria CAIXA - 0800 725 7474</a>
+<a href="http://www.caixa.gov.br/atendimento/canal-denuncia/Paginas/default.aspx?utm_source=site_caixa&utm_medium=maisdestaques&utm_campaign=ouvidoria&utm_content=denuncia">Canal de Denúncia</a> 
+<a target="_blank" href="https://www.consumidor.gov.br">Consumidor.gov.br</a></span>
+                                                </a>
+                                            </li>
+                                        
+                                    <li class="see-more row">
+                                        <div class="colxs-12">
+                                            <div class="colxs-6 see-more"><a href="https://www.caixa.gov.br/voce">Mais destaques</a></div>
+                                            
+                                        </div> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Mais destaques -------------------->
+                        </div>
+                        <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                    </article>
+                    <!-- conteúdo slider -------------------->
+                </section>
+            
+                <section id='itemDois' class="content-section itemDois">
+                    <a class="content-item visible-mobile" href="#itemDois" onclick="javascript:loadItem('PARA TRABALHADORES,2,Dois');">
+                        <img src="https://www.caixa.gov.br/PublishingImages/02_Trabalhadores.png" alt="PARA TRABALHADORES"/>
+                        PARA TRABALHADORES
+                        <!-- icone -->
+                    </a>
+                    <!-- menu mobile -->
+                    <article>
+                        <!-- conteúdo slider -------------------->
+                        <div class="row  slide-row modelo-">
+                            <a href="#" class="carousel hide" data-slide="Dois">PARA TRABALHADORES</a>
+                            <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                            <div class="article-content colsm-9">
+                                <!-- article-content -->
+                                <!-- carrossel observar o tipo --------------------------------------------------------------------------------------------------------->
+                                <div class="additemDois">
+                                    <div class="carrossel carrossel-slide-02">
+                                        
+                                                <div class="item item-carrossel slide-modelo-05">
+                                                    <span class="bg-home" style="background-image: url()"></span>
+                                                    <!-- item-carrossel -------------------->
+                                                    <h2 class="giga"></h2>
+                                                    <img src='' class="article-illustration" alt="" />
+                                                    <div class="article-actions row">
+                                                        <p class="description"></p>
+                                                        <p class="action">
+                                                            <a href="" title="" class="home-button "> <span>▶</span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            
+                                        
+                                    </div>
+
+                                </div>
+                                <!-- carrossel fim -------------------->
+                                <!-- navegação slides - fixo - colocar o numero de acordo com o carrossel  ----------------------->
+                                <a id='slide-p-0' class="slider-nav slider-prev" title="Slider anterior">Anterior</a>
+                                <a id='slide-n-0' class="slider-nav slider-next" title="Próximo slider">Próximo</a>
+                                <!-- navegação slides - fixo ----------------------->
+                                <!-- carrossel ----------------------------------------------------------------------------------------------------------------------->
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- article-content -------------------->
+                            <div class="related-itens clearfix colsm-3">
+                                <h2>Mais benefícios para o trabalhador</h2>
+                                <ul>
+                                    
+                                            <li>
+                                                <a href="https://acessoseguro.caixa.gov.br/internet.do?segmento=CONVENIADO01&template=simulador&urlCallback=https://www.conectividadesocial.caixa.gov.br/sifug-web/principal.fug">
+                                                    <span class="home-related-title">FGTS - Saque Aniversário</span>
+                                                    <span class="home-related-desc milli">Simule aqui o valor que você poderá sacar.</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/beneficios-trabalhador/inss">
+                                                    <span class="home-related-title">INSS</span>
+                                                    <span class="home-related-desc milli">Receba seu benefício pela CAIXA. É rápido e seguro.</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/beneficios-trabalhador/abono-salarial/Paginas/default.aspx">
+                                                    <span class="home-related-title">Abono Salarial</span>
+                                                    <span class="home-related-desc milli">Verifique quem tem direto e como sacar.</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://cefwebchat2.chatbsservices.com.br/index.html?fullscreen">
+                                                    <span class="home-related-title">Chat FGTS</span>
+                                                    <span class="home-related-desc milli">Tire todas as suas dúvidas sobre os novos saques do FGTS.</span>
+                                                </a>
+                                            </li>
+                                        
+                                    <li class="see-more row">
+                                        <div class="colxs-12">
+                                            <div class="colxs-6 see-more"><a href="https://www.caixa.gov.br/beneficios-trabalhador">Todos os benefícios</a></div>
+                                            
+                                        </div> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Mais destaques -------------------->
+                        </div>
+                        <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                    </article>
+                    <!-- conteúdo slider -------------------->
+                </section>
+            
+                <section id='itemTres' class="content-section itemTres">
+                    <a class="content-item visible-mobile" href="#itemTres" onclick="javascript:loadItem('PROGRAMAS SOCIAIS,3,Tres');">
+                        <img src="https://www.caixa.gov.br/PublishingImages/03_ProgramasSociais.png" alt="PROGRAMAS SOCIAIS"/>
+                        PROGRAMAS SOCIAIS
+                        <!-- icone -->
+                    </a>
+                    <!-- menu mobile -->
+                    <article>
+                        <!-- conteúdo slider -------------------->
+                        <div class="row  slide-row modelo-">
+                            <a href="#" class="carousel hide" data-slide="Tres">PROGRAMAS SOCIAIS</a>
+                            <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                            <div class="article-content colsm-9">
+                                <!-- article-content -->
+                                <!-- carrossel observar o tipo --------------------------------------------------------------------------------------------------------->
+                                <div class="additemTres">
+                                    <div class="carrossel carrossel-slide-03">
+                                        
+                                                <div class="item item-carrossel slide-modelo-03">
+                                                    <span class="bg-home" style="background-image: url()"></span>
+                                                    <!-- item-carrossel -------------------->
+                                                    <h2 class="giga"></h2>
+                                                    <img src='' class="article-illustration" alt="" />
+                                                    <div class="article-actions row">
+                                                        <p class="description"></p>
+                                                        <p class="action">
+                                                            <a href="" title="" class="home-button "> <span>▶</span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="item item-carrossel slide-modelo-03">
+                                                    <span class="bg-home" style="background-image: url()"></span>
+                                                    <!-- item-carrossel -------------------->
+                                                    <h2 class="giga"></h2>
+                                                    <img src='' class="article-illustration" alt="" />
+                                                    <div class="article-actions row">
+                                                        <p class="description"></p>
+                                                        <p class="action">
+                                                            <a href="" title="" class="home-button "> <span>▶</span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            
+                                        
+                                    </div>
+
+                                </div>
+                                <!-- carrossel fim -------------------->
+                                <!-- navegação slides - fixo - colocar o numero de acordo com o carrossel  ----------------------->
+                                <a id='slide-p-03' class="slider-nav slider-prev" title="Slider anterior">Anterior</a>
+                                <a id='slide-n-03' class="slider-nav slider-next" title="Próximo slider">Próximo</a>
+                                <!-- navegação slides - fixo ----------------------->
+                                <!-- carrossel ----------------------------------------------------------------------------------------------------------------------->
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- article-content -------------------->
+                            <div class="related-itens clearfix colsm-3">
+                                <h2>Todos os programas sociais</h2>
+                                <ul>
+                                    
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/auxilio/auxilio-extensao">
+                                                    <span class="home-related-title">Auxílio Emergencial Extensão</span>
+                                                    <span class="home-related-desc milli">Um suporte financeiro adicional aos trabalhadores beneficiários do Auxílio Emergencial que atendam às novas condições. Saiba mais</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/beneficios-trabalhador/beneficio-emergencial/Paginas/default.aspx">
+                                                    <span class="home-related-title">Benefício Emergencial de Preservação do Emprego e da Renda - BEm</span>
+                                                    <span class="home-related-desc milli">O Benefício Emergencial de Preservação do Emprego e da Renda – BEm é destinado a trabalhadores que formalizaram acordo com os seus empregadores, durante o período da pandemia da COVID-19.</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/programas-sociais/fies">
+                                                    <span class="home-related-title">FIES</span>
+                                                    <span class="home-related-desc milli">O caminho mais rápido para chegar na universidade</span>
+                                                </a>
+                                            </li>
+                                        
+                                    <li class="see-more row">
+                                        <div class="colxs-12">
+                                            <div class="colxs-6 see-more"><a href="https://www.caixa.gov.br/programas-sociais">Todos os programas</a></div>
+                                            
+                                        </div> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Mais destaques -------------------->
+                        </div>
+                        <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                    </article>
+                    <!-- conteúdo slider -------------------->
+                </section>
+            
+                <section id='itemQuatro' class="content-section itemQuatro">
+                    <a class="content-item visible-mobile" href="#itemQuatro" onclick="javascript:loadItem('LOTERIAS CAIXA,4,Quatro');">
+                        <img src="https://www.caixa.gov.br/PublishingImages/04_Loterias.png" alt="LOTERIAS CAIXA"/>
+                        LOTERIAS CAIXA
+                        <!-- icone -->
+                    </a>
+                    <!-- menu mobile -->
+                    <article>
+                        <!-- conteúdo slider -------------------->
+                        <div class="row  slide-row modelo-sim">
+                            <a href="#" class="carousel hide" data-slide="Quatro">LOTERIAS CAIXA</a>
+                            <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                            <div class="article-content colsm-9">
+                                <!-- article-content -->
+                                <!-- carrossel observar o tipo --------------------------------------------------------------------------------------------------------->
+                                <div class="additemQuatro">
+                                    <div class="carrossel carrossel-slide-04">
+                                        
+                                        
+                                    </div>
+
+                                </div>
+                                <!-- carrossel fim -------------------->
+                                <!-- navegação slides - fixo - colocar o numero de acordo com o carrossel  ----------------------->
+                                <a id='slide-p-0' class="slider-nav slider-prev" title="Slider anterior">Anterior</a>
+                                <a id='slide-n-0' class="slider-nav slider-next" title="Próximo slider">Próximo</a>
+                                <!-- navegação slides - fixo ----------------------->
+                                <!-- carrossel ----------------------------------------------------------------------------------------------------------------------->
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- article-content -------------------->
+                            <div class="related-itens clearfix colsm-3">
+                                <h2></h2>
+                                <ul>
+                                    
+                                    <li class="see-more row">
+                                        <div class="colxs-12">
+                                            <div class="colxs-6 see-more"><a href=""></a></div>
+                                            
+                                        </div> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Mais destaques -------------------->
+                        </div>
+                        <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                    </article>
+                    <!-- conteúdo slider -------------------->
+                </section>
+            
+                <section id='itemCinco' class="content-section itemCinco">
+                    <a class="content-item visible-mobile" href="#itemCinco" onclick="javascript:loadItem('HABITAÇÃO,5,Cinco');">
+                        <img src="https://www.caixa.gov.br/PublishingImages/05_Habitacao.png" alt="HABITAÇÃO"/>
+                        HABITAÇÃO
+                        <!-- icone -->
+                    </a>
+                    <!-- menu mobile -->
+                    <article>
+                        <!-- conteúdo slider -------------------->
+                        <div class="row  slide-row modelo-">
+                            <a href="#" class="carousel hide" data-slide="Cinco">HABITAÇÃO</a>
+                            <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                            <div class="article-content colsm-9">
+                                <!-- article-content -->
+                                <!-- carrossel observar o tipo --------------------------------------------------------------------------------------------------------->
+                                <div class="additemCinco">
+                                    <div class="carrossel carrossel-slide-05">
+                                        
+                                                <div class="item item-carrossel slide-modelo-05">
+                                                    <span class="bg-home" style="background-image: url()"></span>
+                                                    <!-- item-carrossel -------------------->
+                                                    <h2 class="giga"></h2>
+                                                    <img src='' class="article-illustration" alt="" />
+                                                    <div class="article-actions row">
+                                                        <p class="description"></p>
+                                                        <p class="action">
+                                                            <a href="" title="" class="home-button "> <span>▶</span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="item item-carrossel slide-modelo-05">
+                                                    <span class="bg-home" style="background-image: url()"></span>
+                                                    <!-- item-carrossel -------------------->
+                                                    <h2 class="giga"></h2>
+                                                    <img src='' class="article-illustration" alt="" />
+                                                    <div class="article-actions row">
+                                                        <p class="description"></p>
+                                                        <p class="action">
+                                                            <a href="" title="" class="home-button "> <span>▶</span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            
+                                        
+                                    </div>
+
+                                </div>
+                                <!-- carrossel fim -------------------->
+                                <!-- navegação slides - fixo - colocar o numero de acordo com o carrossel  ----------------------->
+                                <a id='slide-p-05' class="slider-nav slider-prev" title="Slider anterior">Anterior</a>
+                                <a id='slide-n-05' class="slider-nav slider-next" title="Próximo slider">Próximo</a>
+                                <!-- navegação slides - fixo ----------------------->
+                                <!-- carrossel ----------------------------------------------------------------------------------------------------------------------->
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- article-content -------------------->
+                            <div class="related-itens clearfix colsm-3">
+                                <h2>Conheça nossas opções</h2>
+                                <ul>
+                                    
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/voce/habitacao/Paginas/default.aspx#?pk_campaign=habitacao&pk_kwd=home">
+                                                    <span class="home-related-title">Financiamento</span>
+                                                    <span class="home-related-desc milli"></span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/voce/consorcios/Paginas/default.aspx">
+                                                    <span class="home-related-title">Consórcio</span>
+                                                    <span class="home-related-desc milli"></span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/poder-publico/infraestrutura-saneamento-mobilidade/habitacao/Paginas/default.aspx">
+                                                    <span class="home-related-title">Habitação Popular</span>
+                                                    <span class="home-related-desc milli"></span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/voce/habitacao/imoveis-venda/Paginas/default.aspx">
+                                                    <span class="home-related-title">Imóveis CAIXA</span>
+                                                    <span class="home-related-desc milli"></span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/voce/negociacao/Paginas/default.aspx">
+                                                    <span class="home-related-title">Negociação de Dívidas</span>
+                                                    <span class="home-related-desc milli"></span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://www.caixa.gov.br/voce/habitacao/servicos/Paginas/default.aspx">
+                                                    <span class="home-related-title">Serviços para Habitação</span>
+                                                    <span class="home-related-desc milli"></span>
+                                                </a>
+                                            </li>
+                                        
+                                    <li class="see-more row">
+                                        <div class="colxs-12">
+                                            <div class="colxs-6 see-more"><a href="https://www.caixa.gov.br/voce/habitacao">Tudo sobre Habitação</a></div>
+                                            
+                                        </div> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Mais destaques -------------------->
+                        </div>
+                        <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                    </article>
+                    <!-- conteúdo slider -------------------->
+                </section>
+            
+    </div>
+    
+            <section id="loteria" class="content-section hide">
+                <!-- item slider -->
+                <article>
+                    <div class="row slide-row">
+                        <div class="loterias slide-modelo-04 only-resultado">
+                            <!-- DIV que recebe a classe que determina o modelo do slide -------------------->
+                            <div class="article-content colsm-9">
+
+                                
+                                        
+                                                <span class="bg-home" style="background-image: url(https://www.caixa.gov.br/PublishingImages/home/Banner_home_BG.jpg)">https://www.caixa.gov.br/PublishingImages/home/Banner_home_BG.jpg</span>
+                                            
+                                        <div class="sorteio-loteria clearfix">
+                                            <div id="ctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a_NomeLoteria">
+                                                <p>
+                                                    <span id="ctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a_LabelNameLoteria"></span>
+                                                </p>
+                                                <p class="description">
+                                                    Sorteio nº&nbsp;<span id="ctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a_LabelNumeroConcurso"></span>
+                                                    
+                                                    
+                                                </p>
+
+                                            </div>
+                                            <!-- div nome-loteria -->
+
+                                            
+
+                                        </div>
+                                        <!-- div sorteio-loteria -->
+
+                                        
+
+
+                                        <div class="article-actions inline">
+                                            <p class="description">
+                                                <span id="ctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a_LabelTexto"><p>&#160; </p></span>
+                                            </p>
+                                            <p class="action">
+                                                
+                                                        <a href="https://www.loteriasonline.caixa.gov.br/silce-web/?utm_source=site_caixa&utm_medium=home&utm_campaign=loteriasonline&utm_term=mega#/mega-sena" class="home-button orange">Clique e aposte
+                                                            <span>▶</span></a>
+                                                    
+
+                                            </p>
+                                        </div>
+                                    
+
+
+
+                            </div>
+                            <!-- div article-content -->
+
+                            <div class="related-itens clearfix colsm-3">
+                                <h2>
+                                    <span id="ctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a_LabelTextoMenuDestaque"></span></h2>
+                                <ul>
+                                    
+                                    <li class="see-more row">
+                                        <div class="colxs-12">
+
+                                            <div class="colxs-6 see-more">
+                                                <a id="ctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a_LinkButtonMaisLoterias" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl59$g_16298322_5739_4d08_bcc7_b4e9dea4c93a$LinkButtonMaisLoterias&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Mais Loterias </a>
+                                            </div>
+
+                                        
+
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- item slider -->
+
+        
+    <div id="ctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a_upAjax">
+					
+            <div id="ctl00_ctl59_g_16298322_5739_4d08_bcc7_b4e9dea4c93a_transicao">
+
+                
+            </div>
+        
+				</div>
+
+    <input name="ctl00$ctl59$g_16298322_5739_4d08_bcc7_b4e9dea4c93a$txtAjax" type="text" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl59$g_16298322_5739_4d08_bcc7_b4e9dea4c93a$txtAjax\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="txtAjax" Class="txtAjax hide" />
+    <label Class="txtAjax hide" for="txtAjax">txtAjax</label>
+</div>
+<script type="text/javascript">
+   
+    
+</script>
+
+
+<!-- fim content-wrapper box slider -->
+ 
+			</div><div class="ms-clear"></div></div>
+		</div><div class="ms-PartSpacingVertical"></div>
+	</div><div id="MSOZoneCell_WebPartctl00_ctl59_g_d6ad3eb6_ec92_408a_839b_c8a253e2328a" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div WebPartID="d6ad3eb6-ec92-408a-839b-c8a253e2328a" HasPers="false" id="WebPartctl00_ctl59_g_d6ad3eb6_ec92_408a_839b_c8a253e2328a" width="100%" class="ms-WPBody noindex " allowDelete="false" allowExport="false" style="" ><div id="ctl00_ctl59_g_d6ad3eb6_ec92_408a_839b_c8a253e2328a">
+				<DIV class="ms-rte-embedcode ms-rte-embedwp"><style>
+	/*botão de passagem de home*/ 
+	/*slider - muda tela*/
+	.slider-nav{
+		top: 65%;
+	}
+	/*título*/
+	.giga{
+		/*font-size:4rem !important;*/
+		font-size:3.6rem !important;
+	}
+	/*não aparece no desktop*/
+	.only-mobile{
+		display: none !important;
+	}
+	/*dispositivos móveis*/
+	@media screen and (max-width: 37.49em){
+		/*título*/
+		h2.giga{
+			font-size: 2.5rem !important;
+			letter-spacing: -1px !important;
+		}
+		/*classe aparece somente no mobile*/
+		.only-mobile{
+			display: unset !important;
+		}
+		/*classe não aparece no mobile*/
+		.no-mobile{
+			display: none !important;
+		}
+		/*botao - todos*/
+		.action{
+			margin-bottom: 25px !important;
+		}
+	}
+	/*-----------------------------------*/
+	/* ---classe_1--- */
+	/*tela grande*/
+
+	/*título*/
+	h2.title-1{
+	}
+	/*imagem*/
+	.article-illustration-1 {
+		right: 5px !important;
+	}
+	/*botao*/
+	.action-1{
+	}
+
+	/*tela média*/
+	@media screen and (max-width: 109.49em){
+		.article-illustration-1{
+			
+		}
+	}
+	/*tela pequena*/
+	@media screen and (max-width: 94.49em){
+		h2.title-1 {
+		}
+		.article-illustration-1{
+			
+		}
+	}
+	/*mobile*/
+	@media screen and (max-width: 37.49em){
+		h2.title-1{
+		}
+		
+		.article-illustration-1 {
+			width: 250px !important;
+			top: 315px !important;
+		}
+		.action-1 {
+		}
+	}
+	/* FIM ---classe_1--- */
+
+	/* ---classe_2--- */
+	/*tela grande*/
+
+	/*título*/
+	h2.title-2{
+		font-size: 4.6rem !important;
+	}
+	/*imagem*/
+	.article-illustration-2 {
+		right: 5px !important;
+	}
+	/*botao*/
+	.action-2{
+	}
+
+	/*tela média*/
+	@media screen and (max-width: 109.49em){
+		.article-illustration-2{
+			
+		}
+	}
+	/*tela pequena*/
+	@media screen and (max-width: 94.49em){
+		h2.title-2 {
+		}
+		.article-illustration-2{
+			
+		}
+	}
+	/*mobile*/
+	@media screen and (max-width: 37.49em){
+		h2.title-2{
+			font-size: 3.6em !important;
+			line-height: .9em !important;
+		}
+		
+		.article-illustration-2 {
+			top: 270px !important;
+		}
+		.action-2 {
+			margin-top: 395px !important;
+		}
+	}
+	/* FIM ---classe_2--- */
+
+
+	}
+	
+</style>
+<script>
+//	classe 	   pos  item	
+	classe_1 = 0; //Auxílio
+//	classe_2 = ; //PRONAMPE
+//	classe_3 = 1; //vazio
+
+	img1 = document.querySelectorAll(".article-illustration")[classe_1];
+	btn1 = document.querySelectorAll(".action")[classe_1];
+	ttl1 = document.querySelectorAll(".giga")[classe_1];
+
+/*
+	img2 = document.querySelectorAll(".article-illustration")[classe_2];
+	img2.style.display = "none";
+	btn2 = document.querySelectorAll(".action")[classe_2];
+	ttl2 = document.querySelectorAll(".giga")[classe_2];
+*/
+	/*
+	img3 = document.querySelectorAll(".article-illustration")[classe_3];
+	img3.style.display = "none";
+	btn3 = document.querySelectorAll(".action")[classe_3];
+	ttl3 = document.querySelectorAll(".giga")[classe_3];
+	*/
+	window.onload = function(){ 
+
+		img1.classList.add("article-illustration-1");
+		btn1.classList.add("action-1");
+		ttl1.classList.add("title-1");
+
+/*
+		img2.classList.add("article-illustration-2");
+		btn2.classList.add("action-2");
+		ttl2.classList.add("title-2");
+*/
+/*
+		img3.classList.add("article-illustration-3");
+		btn3.classList.add("action-3");
+		ttl3.classList.add("title-3");
+*/
+//		img2.style.display = "block";
+//		img3.style.display = "block";
+	}
+     $('span[id$="Label1"').hide();
+</script></DIV>
+			</div><div class="ms-clear"></div></div>
+		</div>
+	</div>
+</div>
+<menu class="ms-hide">
+	<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/15/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute(&#39;helpLink&#39;), MenuWebPart.getAttribute(&#39;helpMode&#39;))" text="Ajuda" type="option" style="display:none">
+
+	</ie:menuitem>
+</menu>
+
+<div style='display:none' id='hidZone'></div>
+                                                    </span>
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- ******************************************************** Conteúdo ******************************************************************* -->
+                                        </div>
+                                        <!-- fim wrapper -->
+                                        <div id="cover">
+                                            <div id="cover1" class="cover">
+                                            </div>
+                                            <div id="cover2" class="cover">
+                                            </div>
+                                            <div id="cover3" class="cover">
+                                            </div>
+                                            <div id="cover4" class="cover">
+                                            </div>
+                                            <div id="cover5" class="cover">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                <!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setCookieDomain", "*.caixa.gov.br"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//ew.caixa.gov.br/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+                                
+                                
+                                <!-- caixa analytics - inicio -->
+                                <script src="/Style Library/js/angular.min.js" type="text/javascript">//<![CDATA[
+									<script src="/Style Library/js/caixaanalytics.js" type="text/javascript">//<![CDATA[
+									<script>//<![CDATA[
+									$(document).ready(function() {
+										Analytics.init('347d8a314b42405a936163859aa90ca861cf3801','SIWIC - Sistema Web Internet CaixaWeb');
+										Analytics.trackPage(window.location.href);
+									}); 
+                                //]]>
+                                </script>
+                                <!-- caixa analytics - fim -->
+                                
+                                <!-- Google Tag Manager (noscript) -->
+							<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDBHSL"
+							height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+						<!-- End Google Tag Manager (noscript) --> 
+                                                        <!-- Begin App Insights Atualizado em 28092018 cef_index-->
+							<script type="text/javascript">//<![CDATA[
+        
+						        var appInsights = window.appInsights || function (config) {
+						            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } }
+						            var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js"; u.getElementsByTagName(o)[0].parentNode.appendChild(s); try { t.cookie = u.cookie } catch (h) { }
+						            for (t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; i.length;)
+						                r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+						        }
+						        ({ instrumentationKey: "964812c6-5e8e-4291-838c-e4a21c31ed18", overridePageViewDuration: true }); window.appInsights = appInsights; $(document).ready(function () { appInsights.trackPageView(null, null, { appName: "SIWIC.CAIXA.GOV", appVersion: "1.0", urlReferrer: document.referrer, "screenResolution": screen.width + "x" + screen.height }); });
+						
+						         //]]>
+    						</script>
+<!-- End App Insights -->
+                            <div id="DeltaFormDigest">
+<script type="text/javascript">//<![CDATA[
+        var formDigestElement = document.getElementsByName('__REQUESTDIGEST')[0];
+        if (!((formDigestElement == null) || (formDigestElement.tagName.toLowerCase() != 'input') || (formDigestElement.type.toLowerCase() != 'hidden') ||
+            (formDigestElement.value == null) || (formDigestElement.value.length <= 0)))
+        {
+            formDigestElement.value = '0x1CE800D724C1FAA961C3B9B14FE509CC930E53904E0DA84A37991018F775D59B36003891EF97ED1494D60B52365623E6E01FFC32669700744D2E6E2D75BC8D66,04 Aug 2021 17:38:53 -0000';
+            g_updateFormDigestPageLoaded = new Date();
+        }
+        //]]>
+        </script>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var _spFormDigestRefreshInterval = 1440000;window.g_updateFormDigestPageLoaded = new Date(); window.g_updateFormDigestPageLoaded.setDate(window.g_updateFormDigestPageLoaded.getDate() -5);var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{099d0dfb-b951-4f47-80fe-c62625abc9ef}",itemId: 190,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: false,forceCheckout: true,rootFolderUrl: "\u002fPaginas",itemPermissions:{High:0,Low:196673}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+};
+function __RegisterWebPartPageCUI() {
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js");}
+_spBodyOnLoadFunctionNames.push("__RegisterWebPartPageCUI");var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';
+function ExtendReminder()
+{
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.open('POST', 'https:\u002f\u002fwww.caixa.gov.br/_api/site/ExtendUpgradeReminderDate', true);
+xmlhttp.setRequestHeader('x-requestdigest', document.forms[MSOWebPartPageFormName]['__REQUESTDIGEST'].value);
+xmlhttp.onreadystatechange = function() { 
+    if(xmlhttp.readyState == 4 && xmlhttp.status == 200) { document.getElementById('status_preview'+'').style.display='none'; } 
+}
+xmlhttp.send();
+return false;
+}
+
+function LaunchPreview()
+{
+
+var st = document.getElementById('status_preview' + '');
+if(st != null)
+{
+    st.style.display = '';
+    return;
+}
+
+st = document.createElement("div");
+st.id = "status_preview" + "";
+var rg = [];
+rg.push("<div style='font-family: \"Segoe UI\", Tahoma, sans-serif; font-size:13px; min-height:24px; background: #f8d4d4; color:#4c4c4c; border:1px solid #f5a6a7;  padding:12px 14px 6px;'>");
+rg.push("<div id='");
+rg.push(st.id);
+rg.push("_hiddenPriMsg");
+rg.push("' style='position:absolute; top:-2000px; width:1px; height:1px; overflow:hidden; z-index:3; word-wrap:normal;'>");
+rg.push("Muito Importante");
+rg.push("</div>");
+
+rg.push("<a id='sitestatusclose' href='#' style=\"text-decoration: none; padding:3px 5px; float:");
+if(document.documentElement.dir == 'rtl')
+    rg.push("left;\"");
+else
+    rg.push("right;\"");
+rg.push("onClick=\"document.getElementById('status_preview'+'').style.display='none'; ; return false;\" title='Fechar'><img style='border:0px;' src='/_layouts/15/images/exit.png' title=''></a>");
+rg.push("<span id='");
+rg.push("status_preview");
+rg.push("_body");
+rg.push("' >");
+rg.push("Pedimos desculpas pelo transtorno, mas tornamos o site somente leitura enquanto estamos fazendo algumas melhorias.");
+rg.push("</span>");
+rg.push("</div>");
+st.innerHTML = rg.join("");
+st.setAttribute("role", "alert");   // ARIA
+st.setAttribute("aria-relevant", "all");
+st.setAttribute("aria-live", "polite");
+document.body.insertBefore(st, document.body.childNodes[0]);
+}
+LaunchPreview();
+var g_clientIdDeltaPlaceHolderMain = "DeltaPlaceHolderMain";
+var g_clientIdDeltaPlaceHolderUtilityContent = "DeltaPlaceHolderUtilityContent";
+//]]>
+</script>
+</form>
+					<span id="DeltaPlaceHolderUtilityContent"></span></body>
+                        </html><!-- Renderizado com o uso do perfil de cache:Internet Pública (Somente Anônimo) em: 2021-08-04T14:38:31 -->
