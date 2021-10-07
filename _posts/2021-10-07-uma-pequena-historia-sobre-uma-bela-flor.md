@@ -43,7 +43,15 @@ intro_paragraph: >-
   * ⁣
 
   * André Ribas - Eu. Acho que mereço créditos também afinal deu muito trabalho para escrever este post 🤷
+
+  * ⁣
+
+  * ⁣
+
+  * ⁣
 ---
+* **Anúncio**
+
 <script type="text/javascript">
 	atOptions = {
 		'key' : '2872aedbd59cf5defe1f8833b307e275',
