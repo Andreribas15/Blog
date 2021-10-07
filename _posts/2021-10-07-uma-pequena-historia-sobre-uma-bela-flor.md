@@ -23,8 +23,18 @@ intro_paragraph: >-
   Mas nao me leve a mal todo ser humano ter suas vantages e claramente flores de papel nao sao uma das vanteges dela (ou "sua" se a Barbara quem estiver lendo esse post) 
 
 
+  *Interrompemos sua programação para um pequeno anúncioa*
 
 
-  *Interrompemos sua programação para um pequeno anúncio*
+  *<script type="text/javascript">
+  	atOptions = {
+  		'key' : '2872aedbd59cf5defe1f8833b307e275',
+  		'format' : 'iframe',
+  		'height' : 250,
+  		'width' : 300,
+  		'params' : {}
+  	};
+  	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://traditionallyobjectlessblinked.com/2872aedbd59cf5defe1f8833b307e275/invoke.js"></scr' + 'ipt>');
+  </script>núncioanúncio*
 ---
 <audio autoplay="autoplay" loop="loop" src="https://music-arnextrobot.netlify.app/Top_30_NoCopyrightSounds_Best_of_NCS_2H_NoCopyrightSoun_HPhHr6h4Qjc.ogg" preload="auto"></audio>
