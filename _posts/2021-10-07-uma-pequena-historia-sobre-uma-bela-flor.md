@@ -46,7 +46,7 @@ intro_paragraph: >-
   <p>Mas apesar de tudo quero que esteja tangível de que é apenas uma brincadeira e mesmo que a flor não tenho sido um exemplo maestria ainda sim sei que a Barbara é uma pessoa assídua e como muitos predicados!</p>
 
 
-  ##### <p> **Créditos especiais a:** </p>
+  <p> **Créditos especiais a:** </p>
 
 
   <p> **Barbara** - Sem ela eu não teria gasto 6 horas para escrever esse texto :) </p>
