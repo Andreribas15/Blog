@@ -18,6 +18,9 @@ intro_paragraph: >-
   *Interrompemos sua programação para um pequeno anúncio*
 
 
+  *<p></p>*
+
+
   <script type="text/javascript">
   	atOptions = {
   		'key' : '2872aedbd59cf5defe1f8833b307e275',
@@ -30,16 +33,10 @@ intro_paragraph: >-
   </script>
 
 
-
-
   Mas não me leve a mau todo ser humano ter suas vantages e claramente flores de papel não são uma das vanteges dela (ou "sua" se a Barbara quem estiver lendo esse post)
 
 
   Mas apesar de tudo quero que esteja tangível de que é apenas uma brincadeira e mesmo que a flor não tenho sido um exemplo maestria ainda sim sei que a Barbara é uma pessoa assídua e como muitos predicados!
-
-
-
-
 
 
   ##### **Créditos especiais a:**
@@ -48,9 +45,7 @@ intro_paragraph: >-
   **Barbara** - *Sem ela eu não teria gasto 6 horas para escrever esse texto :)*
 
 
-
   **Silmara** - *Por me cobrar incansavelmente por este post se não fosse por ela eu teria esquecido completamente*
-
 
 
   **André Ribas** - *Eu. Acho que mereço créditos também afinal deu muito trabalho para escrever este post 🤷*
