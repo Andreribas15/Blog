@@ -18,10 +18,6 @@ intro_paragraph: >-
 
   * Mas apesar de tudo quero que esteja tangível de que é apenas uma brincadeira e mesmo que a flor não tenho sido um exemplo maestria ainda sim sei que a Barbara é uma pessoa assídua e como muitos predicados!
 
-  *
-
-  *
-
   * ##### Créditos especiais a:
 
   * Barbara - Sem ela eu não teria gasto 6 horas para escrever esse texto :) 
