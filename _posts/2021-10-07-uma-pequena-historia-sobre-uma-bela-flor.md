@@ -13,10 +13,16 @@ intro_paragraph: >-
   sempre tem o aluno sui generis que no caso de nossa sala foi a Barbara ate ai
   tudo bem um uma sala sempre tem aquele aluno que se destaca por fazer algo
   completamente ridículo ou muito indizível e claro a Barbara é o meio termo 😁
+  *⁣
+  
+  *⁣
 
   * Mas não me leve a mau todo ser humano ter suas vantages e claramente flores de papel não são uma das vanteges dela (ou "sua" se a Barbara quem estiver lendo esse post)
+  * ⁣
 
   * Mas apesar de tudo quero que esteja tangível de que é apenas uma brincadeira e mesmo que a flor não tenho sido um exemplo maestria ainda sim sei que a Barbara é uma pessoa assídua e como muitos predicados!
+  * ⁣
+  * ⁣
 
   * ##### Créditos especiais a:
 
