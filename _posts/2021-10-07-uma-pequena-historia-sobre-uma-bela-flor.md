@@ -4,28 +4,20 @@ title: Uma pequena historia sobre uma "bela" flor
 meta_description: Um pequeno texto sobre uma "linda" flor para decorar "lixo"
 author: andre_ribas
 date: 2021-10-07 15:30:48
-intro_paragraph: >-
-  <p>Esse é um pequeno texto sobre uma flor criada por uma habitual estudante
-  brasileira cursando o ultimo ano do ensino fundamental. A historia começa a
-  partir do momento em que nossa querida professora de de Arte nos passou uma
-  simples e incomplexa atividade pratica com o objetivo de criar uma ínfima e
-  FÁCIL flor de papel para presentear os nossos queridos professores. Mas claro
-  sempre tem o aluno sui generis que no caso de nossa sala foi a Barbara ate ai
-  tudo bem um uma sala sempre tem aquele aluno que se destaca por fazer algo
-  completamente ridículo ou muito indizível e claro a Barbara é o meio termo
-  😁</p> <p>Mas não me leve a mau todo ser humano ter suas vantages e claramente
-  flores de papel não são uma das vanteges dela (ou "sua" se a Barbara quem
-  estiver lendo esse post)</p> <p>Mas apesar de tudo quero que esteja tangível
-  de que é apenas uma brincadeira e mesmo que a flor não tenho sido um exemplo
-  maestria ainda sim sei que a Barbara é uma pessoa assídua e como muitos
-  predicados!</p> <p>Créditos especiais a:</p>
-
-
-  * <p>Barbara - Sem ela eu não teria gasto 6 horas para escrever esse texto :)</p>
-
-  * <p>Silmara - Por me cobrar incansavelmente por este post se não fosse por ela eu teria esquecido completamente</p>
-
-  * <p>André Ribas - Eu. Acho que mereço créditos também afinal deu muito trabalho para escrever este post 🤷</p>
+intro_paragraph: <p>Esse é um pequeno texto sobre uma flor criada por uma
+  habitual estudante brasileira cursando o ultimo ano do ensino fundamental. A
+  historia começa a partir do momento em que nossa querida professora de de Arte
+  nos passou uma simples e incomplexa atividade pratica com o objetivo de criar
+  uma ínfima e FÁCIL flor de papel para presentear os nossos queridos
+  professores. Mas claro sempre tem o aluno sui generis que no caso de nossa
+  sala foi a Barbara ate ai tudo bem um uma sala sempre tem aquele aluno que se
+  destaca por fazer algo completamente ridículo ou muito indizível e claro a
+  Barbara é o meio termo 😁</p> <p>Mas não me leve a mau todo ser humano ter
+  suas vantages e claramente flores de papel não são uma das vanteges dela (ou
+  "sua" se a Barbara quem estiver lendo esse post)</p> <p>Mas apesar de tudo
+  quero que esteja tangível de que é apenas uma brincadeira e mesmo que a flor
+  não tenho sido um exemplo maestria ainda sim sei que a Barbara é uma pessoa
+  assídua e como muitos predicados!</p> <p>Créditos especiais a:</p>
 ---
 <script type="text/javascript">
 	atOptions = {
