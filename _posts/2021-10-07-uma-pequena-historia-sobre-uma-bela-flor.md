@@ -21,13 +21,11 @@ intro_paragraph: >-
   predicados!</p> <p>Créditos especiais a:</p>
 
 
-  <p>Barbara - Sem ela eu não teria gasto 6 horas para escrever esse texto :)</p>
+  * Barbara - Sem ela eu não teria gasto 6 horas para escrever esse texto :) 
 
+  * Silmara - Por me cobrar incansavelmente por este post se não fosse por ela eu teria esquecido completamente 
 
-  <p>Silmara - Por me cobrar incansavelmente por este post se não fosse por ela eu teria esquecido completamente</p>
-
-
-  <p>André Ribas - Eu. Acho que mereço créditos também afinal deu muito trabalho para escrever este post 🤷</p>
+  * André Ribas - Eu. Acho que mereço créditos também afinal deu muito trabalho para escrever este post 🤷
 ---
 <script type="text/javascript">
 	atOptions = {
