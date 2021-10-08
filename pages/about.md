@@ -13,6 +13,6 @@ intro_paragraph: |
  * ⁣
  * Também gosto de Inglês, Espanhol, Italiano e, claro, Português (Brasil)
  * Bem, eu acho que é isso 🤷
- *⁣
+ * ⁣
  * Não tenho muito a acrescentar aqui por enquanto, mas sempre tentarei manter esta página atualizada
 <audio autoplay="autoplay" loop="loop" src="1468285242-481817.mp3" preload="auto"></audio>
