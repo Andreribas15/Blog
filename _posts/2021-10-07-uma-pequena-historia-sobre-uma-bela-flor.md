@@ -42,7 +42,7 @@ intro_paragraph: >-
 
   * ⁣
 
-  * André Ribas - Eu. Acho que mereço créditos também afinal deu muito trabalho para pesquisar essas palavras complicadas e que eu nem imaginava que existam no português 🤷
+  * André Ribas - Eu. Acho que mereço créditos também afinal foi muito trabalhoso escrever este texto 🤷
 
   * ⁣
 
