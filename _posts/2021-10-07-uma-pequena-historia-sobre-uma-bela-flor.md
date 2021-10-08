@@ -16,11 +16,11 @@ intro_paragraph: >-
 
   * ⁣
 
-  * Mas não me leve a mau todo ser humano ter suas vantages e claramente flores de papel não são uma das vanteges dela (ou "sua" se a Barbara quem estiver lendo esse post)
+  * Mas não me leve a mau todo ser humano tem suas vantages e claramente flores de papel não são uma das vanteges dela (ou "sua" se é a Barbara quem estiver lendo esse post)
 
   * ⁣
 
-  * Mas apesar de tudo quero que esteja tangível de que é apenas uma brincadeira e mesmo que a flor não tenho sido um exemplo maestria ainda sim sei que a Barbara é uma pessoa assídua e como muitos predicados!
+  * Apesar de tudo quero que esteja tangível de que é apenas uma brincadeira e mesmo que a flor não tenho sido um exemplo de maestria ainda sim sei que a Barbara é uma pessoa assídua e como muitos predicados!
 
   * ⁣
 
@@ -42,7 +42,7 @@ intro_paragraph: >-
 
   * ⁣
 
-  * André Ribas - Eu. Acho que mereço créditos também afinal deu muito trabalho para escrever este post 🤷
+  * André Ribas - Eu. Acho que mereço créditos também afinal deu muito trabalho para pesquisar essas palavras complicadas e que eu nem imaginava que existam no português 🤷
 
   * ⁣
 
