@@ -7,7 +7,7 @@ date: 2021-10-07 15:30:48
 intro_paragraph: >-
   * Esse é um pequeno texto sobre uma flor criada por uma habitual estudante
   brasileira cursando o ultimo ano do ensino fundamental. A historia começa a
-  partir do momento em que nossa querida professora de de Arte nos passou uma
+  partir do momento em que nossa querida professora de Arte nos passou uma
   simples e incomplexa atividade pratica com o objetivo de criar uma ínfima e
   FÁCIL flor de papel para presentear os nossos queridos professores. Mas claro
   sempre tem o aluno sui generis que no caso de nossa sala foi a Barbara ate ai
