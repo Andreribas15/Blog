@@ -14,4 +14,3 @@ intro_paragraph: >-
 
   clique [aqui](https://new.andreribas.arnext.xyz) para acessar a versão mais recente!
 ---
-<audio autoplay="autoplay" loop="loop" src="1468285242-481817.mp3" preload="auto"></audio>
