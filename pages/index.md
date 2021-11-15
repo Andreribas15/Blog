@@ -9,7 +9,7 @@ intro_paragraph: >-
   vindo(a) ao meu site.
 
 
-  hum... parece que está um uma versão antiga do meu blog :/
+  hum... parece que está em uma versão antiga do meu blog :/
 
 
   clique [aqui](https://new.andreribas.arnext.xyz) para acessar a versão mais recente!
